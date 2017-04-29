@@ -6,10 +6,9 @@ $(document).ready(function() {
     var data = {
       "Swarthmore CS Dept": d
     }
-    data = sortAndDeleteOldUsers(data, types)
     var content = parseToContent(null, data, types, depth)
     setupSearch(sys, content, depth)
-    drawGraph(sys, data, depth - 1)
+    drawGraph(sys, data, depth-1)
   }))
 })
 
@@ -17,20 +16,16 @@ function setupSearch(sys, content, reccurence) {
   $('.ui.search')
     .search({
       source: content,
-      searchFields: [
-        'title',
-        'parent'
-      ],
       onSelect: function(result, response) {
-        if (result.type == "root") {
+        if(result.type == "root"){
           var depth = determineDepth(result)
           drawSubtree(sys, result.title, result.children, (window.innerWidth / 100) * Math.pow((4 / 5), depth), reccurence)
-        } else if (result.type == "host") {
+        }else if (result.type == "host") {
           var depth = determineDepth(result)
-          drawSubtree(sys, result.title, result.children, (window.innerWidth / 100) * Math.pow((4 / 5), depth), reccurence - 1)
+          drawSubtree(sys, result.title, result.children, (window.innerWidth / 100) * Math.pow((4 / 5), depth), reccurence-1)
         } else if (result.type == "computer") {
           var depth = determineDepth(result)
-          drawSubtree(sys, result.title, result.children, (window.innerWidth / 100) * Math.pow((4 / 5), depth), reccurence - 2)
+          drawSubtree(sys, result.title, result.children, (window.innerWidth / 100) * Math.pow((4 / 5), depth), reccurence-2)
         } else if (result.type == "user") {
           var depth = determineDepth(result)
           var i = 0;
@@ -83,81 +78,17 @@ function parseToContent(parent, data, types, depth) {
     return parsed
   }
   var keys = Object.keys(data)
+  var newtypes = types.slice(1, types.length)
   for (key in keys) {
-    if (keys[key] !== "ERROR") {
-      var title = null
-      var description = null
-      if (types[0] == 'root') {
-        title = keys[key]
-        description = types[0]
-      } else if (types[0] == 'user') {
-        title = `${data[keys[key]][0]["name"]} (${keys[key]})`
-        description = `${types[0]} on ${parent}<br>on since ${data[keys[key]][0]["date"]} ${data[keys[key]][0]["time"]}`
-      } else {
-        title = keys[key]
-        description = `${types[0]} on ${parent}`
-      }
-      parsed.push({
-        title: title,
-        description: description,
-        //action: 'search'
-        //actionText: data[keys[key]][0]["name"],
-        type: types[0],
-        children: data[keys[key]],
-        parent: parent
-      })
-      parsed = parsed.concat(parseToContent(keys[key], data[keys[key]], types.slice(1, types.length), depth - 1))
-    }
+    parsed.push({
+      title: keys[key],
+      type: types[0],
+      children: data[keys[key]],
+      parent: parent
+    })
+    parsed = parsed.concat(parseToContent(keys[key], data[keys[key]], newtypes, depth - 1))
   }
   return parsed
-}
-
-function sortAndDeleteOldUsers(data, types) {
-  if (types[0] == 'user') {
-    for (user in data) {
-      if (user !== 'ERROR') {
-        sortUserDataWithTime(data[user])
-        if (data[user][0]["idle"] == "old") {
-          //console.log("deleted " + data[user][0]["login"])
-          delete data[user]
-        }
-      }
-    }
-    return data
-  }
-  for (key in data) {
-    data[key] = sortAndDeleteOldUsers(data[key], types.slice(1, types.length))
-  }
-  return data
-}
-
-function sortUserDataWithTime(users) {
-  users.sort(function(user1, user2) {
-    if (user1["idle"] == "old" && user2["idle"] !== "old") {
-      // user1 > user2
-      return 1
-    } else if (user1["idle"] !== "old" && user2["idle"] == "old") {
-      // user1 < user2
-      return -1
-    }
-    var user1Time = null
-    var user2Time = null
-    if (user1["idle"] == "old" && user2["idle"] == "old") {
-      user1Time = user1["date"]
-      user2Time = user2["date"]
-    } else {
-      user1Time = user1["date"] + " " + user1["idle"]
-      user2Time = user2["date"] + " " + user2["idle"]
-    }
-
-    if (Date.parse(user1Time) < Date.parse(user2Time)) {
-      // user1 > user2
-      return 1
-    } else {
-      // user1 < user2
-      return -1
-    }
-  })
 }
 
 function drawGraph(sys, data, depth) {
@@ -247,14 +178,14 @@ function highlightPathToRoot(sys, node) {
   }
 }
 
-function determineDepth(node) {
-  if (node == null) {
+function determineDepth(node){
+  if(node == null){
     return -1
   }
-  if (typeof node === 'string' || node instanceof String) {
+  if(typeof node === 'string' || node instanceof String){
     return getEdgesToRoot(sys, node).length
   }
-  if (node.parent == null) {
+  if(node.parent == null){
     return 0
   } else if (sys.getEdgesTo(node.title).length == 0) {
     // console.log(node);
