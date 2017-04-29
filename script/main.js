@@ -1,157 +1,69 @@
-var Renderer = function(canvas) {
-  var canvas = $(canvas).get(0)
-  var ctx = canvas.getContext("2d")
-  var particleSystem
-
-  var that = {
-    init: function(system) {
-      //
-      // the particle system will call the init function once, right before the
-      // first frame is to be drawn. it's a good place to set up the canvas and
-      // to pass the canvas size to the particle system
-      //
-      // save a reference to the particle system for use in the .redraw() loop
-      particleSystem = system
-
-      // inform the system of the screen dimensions so it can map coords for us.
-      // if the canvas is ever resized, screenSize should be called again with
-      // the new dimensions
-      particleSystem.screenSize(canvas.width, canvas.height)
-      particleSystem.screenPadding(50) // leave an extra 80px of whitespace per side
-      $(window).resize(that.resize)
-      that.resize()
-
-      // set up some event handlers to allow for node-dragging
-      that.initMouseHandling()
-    },
-
-    redraw: function() {
-      //
-      // redraw will be called repeatedly during the run whenever the node positions
-      // change. the new positions for the nodes can be accessed by looking at the
-      // .p attribute of a given node. however the p.x & p.y values are in the coordinates
-      // of the particle system rather than the screen. you can either map them to
-      // the screen yourself, or use the convenience iterators .eachNode (and .eachEdge)
-      // which allow you to step through the actual node objects but also pass an
-      // x,y point in the screen's coordinate system
-      //
-      ctx.fillStyle = "white"
-      ctx.fillRect(0, 0, canvas.width, canvas.height)
-
-      particleSystem.eachEdge(function(edge, pt1, pt2) {
-        // edge: {source:Node, target:Node, length:#, data:{}}
-        // pt1:  {x:#, y:#}  source position in screen coords
-        // pt2:  {x:#, y:#}  target position in screen coords
-
-        // draw a line from pt1 to pt2
-        ctx.strokeStyle = "rgba(0,0,0, .333)"
-        ctx.lineWidth = 3
-        ctx.beginPath()
-        ctx.moveTo(pt1.x, pt1.y)
-        ctx.lineTo(pt2.x, pt2.y)
-        ctx.stroke()
-      })
-
-      particleSystem.eachNode(function(node, pt) {
-        // node: {mass:#, p:{x,y}, name:"", data:{}}
-        // pt:   {x:#, y:#}  node position in screen coords
-
-        // draw a rectangle centered at pt
-        var text = node.name
-        ctx.textAlign = "center"
-        ctx.textBaseline = "middle"
-        ctx.font = `${node.data.fontsize}pt Arial`
-        var padding = node.data.fontsize
-        var h = parseInt(ctx.font) + padding
-        var w = ctx.measureText(text).width + padding
-
-        ctx.fillStyle = node.data.fillcolor
-        ctx.fillRect(pt.x - w / 2, pt.y - h / 2, w, h)
-
-        ctx.fillStyle = node.data.fontcolor
-        ctx.fillText(text, pt.x, pt.y)
-      })
-    },
-
-    resize: function() {
-      var w = $(window).width(),
-        h = $(window).height()
-      canvas.width = w
-      canvas.height = h // resize the canvas element to fill the screen
-      particleSystem.screenSize(w, h) // inform the system so it can map coords for us
-      that.redraw()
-    },
-
-    initMouseHandling: function() {
-      // no-nonsense drag and drop (thanks springy.js)
-      var dragged = null
-
-      // set up a handler object that will initially listen for mousedowns then
-      // for moves and mouseups while dragging
-      var handler = {
-        clicked: function(e) {
-          var pos = $(canvas).offset()
-          _mouseP = arbor.Point(e.pageX - pos.left, e.pageY - pos.top)
-          dragged = particleSystem.nearest(_mouseP)
-
-          if (dragged && dragged.node !== null) {
-            // while we're dragging, don't let physics move the node
-            dragged.node.fixed = true
-          }
-
-          $(canvas).bind('mousemove', handler.dragged)
-          $(window).bind('mouseup', handler.dropped)
-
-          return false
-        },
-        dragged: function(e) {
-          var pos = $(canvas).offset()
-          var s = arbor.Point(e.pageX - pos.left, e.pageY - pos.top)
-
-          if (dragged && dragged.node !== null) {
-            var p = particleSystem.fromScreen(s)
-            dragged.node.p = p
-          }
-
-          return false
-        },
-
-        dropped: function(e) {
-          if (dragged === null || dragged.node === undefined) return
-          if (dragged.node !== null) dragged.node.fixed = false
-          dragged.node.tempMass = 1000
-          dragged = null
-          $(canvas).unbind('mousemove', handler.dragged)
-          $(window).unbind('mouseup', handler.dropped)
-          _mouseP = null
-          return false
-        }
-      }
-
-      // start listening
-      $(canvas).mousedown(handler.clicked)
-
-    },
-
-  }
-  return that
-}
-
 $(document).ready(function() {
   sys = arborInit()
-  $.when(loadData().done(function(data) {
-    drawGraph(sys, {"Swarthmore CS Dept": data})
-    //drawGraph(sys, data)
+  $.when(loadData().done(function(d) {
+    var depth = 4
+    var types = ['root', 'host', 'computer', 'user']
+    var data = {
+      "Swarthmore CS Dept": d
+    }
+    var content = parseToContent(null, data, types, depth)
+    setupSearch(sys, content, depth)
+    drawGraph(sys, data, depth-1)
   }))
-  resize()
-  drawGraph(sys)
-  $(window).on("resize", function() {
-    resize()
-  })
 })
-// function resize() {
-//   $("#canvas").outerHeight($(window).height() - $("#canvas").offset().top - Math.abs($("#canvas").outerHeight(true) - $("#canvas").outerHeight()))
-// }
+
+function setupSearch(sys, content, reccurence) {
+  $('.ui.search')
+    .search({
+      source: content,
+      onSelect: function(result, response) {
+        if(result.type == "root"){
+          var depth = determineDepth(result)
+          drawSubtree(sys, result.title, result.children, (window.innerWidth / 100) * Math.pow((4 / 5), depth), reccurence)
+        }else if (result.type == "host") {
+          var depth = determineDepth(result)
+          drawSubtree(sys, result.title, result.children, (window.innerWidth / 100) * Math.pow((4 / 5), depth), reccurence-1)
+        } else if (result.type == "computer") {
+          var depth = determineDepth(result)
+          drawSubtree(sys, result.title, result.children, (window.innerWidth / 100) * Math.pow((4 / 5), depth), reccurence-2)
+        } else if (result.type == "user") {
+          var depth = determineDepth(result)
+          var i = 0;
+          while (sys.getNode(result.title + i)) {
+            i++
+          }
+          sys.addNode(result.title + i, {
+            name: result.title,
+            fillcolor: "black",
+            fontcolor: "white",
+            childdata: result.children,
+            fontsize: (window.innerWidth / 100) * Math.pow((4 / 5), depth),
+            mass: 1.3
+          })
+          sys.addEdge(result.parent, result.title + i, {
+            length: .5,
+            color: "black",
+            thickness: 5
+          })
+          highlightPathToRoot(sys, result.title + i)
+        }
+        return true
+      }
+    })
+}
+
+function arborInit() {
+  var sys = arbor.ParticleSystem({
+    friction: .5,
+    stiffness: 512,
+    repulsion: 2600,
+    gravity: true,
+    dt: .35,
+    precision: 1
+  })
+  sys.renderer = Renderer("#viewport")
+  return sys
+}
 
 function loadData() {
   return $.ajax({
@@ -160,29 +72,49 @@ function loadData() {
   });
 }
 
-function drawGraph(sys, data) {
+function parseToContent(parent, data, types, depth) {
+  var parsed = []
+  if (depth <= 0) {
+    return parsed
+  }
+  var keys = Object.keys(data)
+  var newtypes = types.slice(1, types.length)
+  for (key in keys) {
+    parsed.push({
+      title: keys[key],
+      type: types[0],
+      children: data[keys[key]],
+      parent: parent
+    })
+    parsed = parsed.concat(parseToContent(keys[key], data[keys[key]], newtypes, depth - 1))
+  }
+  return parsed
+}
+
+function drawGraph(sys, data, depth) {
   var roots = Object.keys(data)
   for (root in roots) {
-    drawSubtree(sys, roots[root], data[roots[root]], 3)
+    drawSubtree(sys, roots[root], data[roots[root]], window.innerWidth / 100, depth)
   }
 }
 
 /*
 This will draw a subtree with parent as the root
 */
-function drawSubtree(sys, parent, data, depth) {
+function drawSubtree(sys, parent, data, size, depth) {
   if (depth <= 0) {
     return null
   }
   if (parent[parent.length - 1] == "*") {
-    if(data["ERROR"].split(' ')[0] == "AUTHENTICATION"){
+    if (data["ERROR"].split(' ')[0] == "AUTHENTICATION") {
       return null
     } else if (data["ERROR"].split(' ')[0] == "DOWN") {
       sys.addNode(parent, {
-        fillcolor: "white",
+        name: parent,
         fontcolor: "red",
-        fontsize: Math.sqrt(depth * 2000),
-        mass:1.3
+        childdata: data,
+        fontsize: size,
+        mass: 1.3
       })
       return parent
     }
@@ -190,59 +122,93 @@ function drawSubtree(sys, parent, data, depth) {
   var subtreeKeys = Object.keys(data)
   var children;
   sys.addNode(parent, {
-    fillcolor: "white",
+    name: parent,
     fontcolor: "black",
-    fontsize: Math.sqrt(depth * 2000),
-    mass:1.3
+    fillcolor: "white",
+    childdata: data,
+    fontsize: size,
+    mass: 1.3
   })
   for (key in subtreeKeys) {
-    child = drawSubtree(sys, subtreeKeys[key], data[subtreeKeys[key]], depth - 1)
+    child = drawSubtree(sys, subtreeKeys[key], data[subtreeKeys[key]], size * 4 / 5, depth - 1)
     if (child == null) {
       return parent
     } else {
-      sys.addEdge(parent, child, {length:.1*depth})
+      sys.addEdge(parent, child, {
+        length: 1 * depth,
+        color: "grey",
+        thickness: 1
+      })
     }
   }
   return parent
-
-
-  // var nodes = Object.keys(data)
-  // var subtrees
-  // for (node in nodes){
-  //   sys.addNode(nodes[node], {fillcolor:"black", fontcolor: "white", fontsize:depth*25})
-  //   subtrees = Object.keys(data[nodes[node]])
-  //   for (subtree in subtrees){
-  //     childnode = drawSubtree(sys, data[nodes[node]][subtrees[subtree]], depth-1)
-  //     if(!(childnode == undefined || childnode == null)){
-  //       console.log(childnode + " and " + nodes[node]);
-  //       sys.addEdge(childnode, nodes[node])
-  //     }
-  //   }
-  // }
-  //
-  // sys.addEdge('a', 'b')
-  // sys.addEdge('a', 'c')
-  // sys.addEdge('a', 'd')
-  // sys.addEdge('a', 'e')
-  // sys.addNode('f', {
-  //   alone: true,
-  //   mass: .25
-  // })
 }
 
-function arborInit() {
-  var sys = arbor.ParticleSystem({
-    friction: .1,
-    stiffness: 600,
-    repulsion: 2600,
-    gravity: true
+function highlightPathToRoot(sys, node) {
+  var pathToRoot = getEdgesToRoot(sys, node)
+  var depth = pathToRoot.length
+  var sysNode = sys.getNode(node)
+  sysNode.data.fillcolor = "black"
+  sysNode.data.fontcolor = "white"
+  sys.renderer.redraw()
+  sys.tweenNode(sysNode, 2, {
+    fillcolor: "white",
+    fontcolor: "black",
   })
-  sys.renderer = Renderer("#viewport")
-  return sys
+  var edge = null
+  console.log(pathToRoot);
+  for (edge in pathToRoot) {
+    sys.pruneEdge(pathToRoot[edge])
+    edge = sys.addEdge(pathToRoot[edge].source, pathToRoot[edge].target, {
+      length: pathToRoot[edge].data.length,
+      color: "black",
+      thickness: 5
+    })
+    edge.source.data.fillcolor = "black"
+    edge.source.data.fontcolor = "white"
+    sys.renderer.redraw()
+    sys.tweenNode(edge.source, 2, {
+      fillcolor: "white",
+      fontcolor: "black",
+    })
+    sys.tweenEdge(edge, 2, {
+      color: "grey",
+      thickness: 1
+    })
+  }
 }
 
-function resize() {
-  console.log()
-  $("canvas").width(window.innerWidth)
-  $("canvas").height(window.innerHeight)
+function determineDepth(node){
+  if(node == null){
+    return -1
+  }
+  if(typeof node === 'string' || node instanceof String){
+    return getEdgesToRoot(sys, node).length
+  }
+  if(node.parent == null){
+    return 0
+  } else if (sys.getEdgesTo(node.title).length == 0) {
+    // console.log(node);
+    // var edge = sys.addEdge(node.parent, node.title, {
+    //   length: .5,
+    //   color: "purple",
+    //   thickness: 1
+    // })
+    // console.log(edge);
+    // // var depth = getEdgesToRoot(sys, node.title).length
+    // // sys.pruneEdge(edge)
+    // // return depth
+    // alert()
+    return 1 + determineDepth(node.parent)
+  } else {
+    return getEdgesToRoot(sys, node.title).length
+  }
+}
+
+function getEdgesToRoot(sys, node) {
+  var edgesTo = sys.getEdgesTo(node)
+  if (edgesTo.length == 0) {
+    return []
+  }
+  return getEdgesToRoot(sys, edgesTo[0].source).concat(edgesTo[0])
 }

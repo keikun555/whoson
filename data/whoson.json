@@ -1,0 +1,3718 @@
+{
+  "hosts.tripwire": {
+    "annatto*": {
+      "ERROR": "AUTHENTICATION ERROR"
+    },
+    "syrup*": {
+      "ERROR": "AUTHENTICATION ERROR"
+    },
+    "sumac": {
+      "kgwon1": [{
+        "comment": "130.58.162.215",
+        "idle": "01:15",
+        "name": "Kenneth Gwon",
+        "time": "15:03",
+        "date": "2017-04-27",
+        "login": "kgwon1",
+        "pid": "178639",
+        "line": "pts/1"
+      }],
+      "cholmgr1": [{
+        "comment": ":0",
+        "idle": "old",
+        "name": "Christina Holmgren",
+        "time": "19:14",
+        "date": "2017-04-26",
+        "login": "cholmgr1",
+        "pid": "157870",
+        "line": "tty7"
+      }]
+    },
+    "salt*": {
+      "ERROR": "AUTHENTICATION ERROR"
+    },
+    "parsley": {
+      "aconant1": [{
+        "comment": "tmux(15713).%0",
+        "idle": "old",
+        "name": "Andrew Conant",
+        "time": "21:26",
+        "date": "2017-03-30",
+        "login": "aconant1",
+        "pid": "15713",
+        "line": "pts/3"
+      }, {
+        "comment": "tmux(15713).%2",
+        "idle": "old",
+        "name": "Andrew Conant",
+        "time": "21:47",
+        "date": "2017-03-30",
+        "login": "aconant1",
+        "pid": "15713",
+        "line": "pts/6"
+      }, {
+        "comment": "tmux(15713).%3",
+        "idle": "old",
+        "name": "Andrew Conant",
+        "time": "22:15",
+        "date": "2017-03-30",
+        "login": "aconant1",
+        "pid": "15713",
+        "line": "pts/7"
+      }, {
+        "comment": "tmux(15713).%7",
+        "idle": "old",
+        "name": "Andrew Conant",
+        "time": "22:52",
+        "date": "2017-04-07",
+        "login": "aconant1",
+        "pid": "15713",
+        "line": "pts/11"
+      }, {
+        "comment": "tmux(15713).%8",
+        "idle": "old",
+        "name": "Andrew Conant",
+        "time": "23:00",
+        "date": "2017-04-07",
+        "login": "aconant1",
+        "pid": "15713",
+        "line": "pts/12"
+      }],
+      "trahman1": [{
+        "comment": "130.58.98.216",
+        "idle": ".",
+        "name": "Tahmid Rahman",
+        "time": "15:46",
+        "date": "2017-04-27",
+        "login": "trahman1",
+        "pid": "11681",
+        "line": "pts/0"
+      }, {
+        "comment": "tmux(12626).%0",
+        "idle": ".",
+        "name": "Tahmid Rahman",
+        "time": "16:12",
+        "date": "2017-04-27",
+        "login": "trahman1",
+        "pid": "12626",
+        "line": "pts/8"
+      }, {
+        "comment": "tmux(12626).%2",
+        "idle": "00:01",
+        "name": "Tahmid Rahman",
+        "time": "16:44",
+        "date": "2017-04-27",
+        "login": "trahman1",
+        "pid": "12626",
+        "line": "pts/14"
+      }],
+      "eremy1": [{
+        "comment": "tmux(1470).%18",
+        "idle": "05:24",
+        "name": "Emma Remy",
+        "time": "11:24",
+        "date": "2017-04-27",
+        "login": "eremy1",
+        "pid": "1470",
+        "line": "pts/1"
+      }, {
+        "comment": "tmux(1470).%19",
+        "idle": "05:24",
+        "name": "Emma Remy",
+        "time": "11:25",
+        "date": "2017-04-27",
+        "login": "eremy1",
+        "pid": "1470",
+        "line": "pts/2"
+      }, {
+        "comment": "tmux(1470).%0",
+        "idle": "old",
+        "name": "Emma Remy",
+        "time": "20:00",
+        "date": "2017-03-15",
+        "login": "eremy1",
+        "pid": "1470",
+        "line": "pts/4"
+      }, {
+        "comment": "tmux(1470).%1",
+        "idle": "old",
+        "name": "Emma Remy",
+        "time": "20:01",
+        "date": "2017-03-15",
+        "login": "eremy1",
+        "pid": "1470",
+        "line": "pts/5"
+      }, {
+        "comment": "tmux(1470).%12",
+        "idle": "old",
+        "name": "Emma Remy",
+        "time": "12:32",
+        "date": "2017-04-16",
+        "login": "eremy1",
+        "pid": "1470",
+        "line": "pts/9"
+      }, {
+        "comment": "tmux(1470).%13",
+        "idle": "old",
+        "name": "Emma Remy",
+        "time": "12:32",
+        "date": "2017-04-16",
+        "login": "eremy1",
+        "pid": "1470",
+        "line": "pts/10"
+      }]
+    },
+    "git*": {
+      "ERROR": "AUTHENTICATION ERROR"
+    },
+    "web": {},
+    "mango": {},
+    "oldspice*": {
+      "ERROR": "DOWN [Errno None] Unable to connect to port 22 on 130.58.68.32"
+    },
+    "ldap*": {
+      "ERROR": "DOWN [Errno None] Unable to connect to port 22 on 130.58.68.2"
+    },
+    "tape*": {
+      "ERROR": "AUTHENTICATION ERROR"
+    },
+    "ubuntu*": {
+      "ERROR": "AUTHENTICATION ERROR"
+    },
+    "beet*": {
+      "ERROR": "AUTHENTICATION ERROR"
+    }
+  },
+  "hosts.256": {
+    "owl": {},
+    "swan": {},
+    "grouse": {
+      "jcote1": [{
+        "comment": ":21",
+        "idle": "old",
+        "name": "John Cote",
+        "time": "09:31",
+        "date": "2017-03-27",
+        "login": "jcote1",
+        "pid": "7761",
+        "line": "tty9"
+      }],
+      "smalawi1": [{
+        "comment": ":0",
+        "idle": "old",
+        "name": "Sayed Malawi",
+        "time": "14:14",
+        "date": "2017-03-17",
+        "login": "smalawi1",
+        "pid": "10743",
+        "line": "tty7"
+      }]
+    },
+    "pelican": {},
+    "kestrel": {},
+    "duck": {
+      "sfernan1": [{
+        "comment": ":0",
+        "idle": "old",
+        "name": "Steven Fernandez",
+        "time": "19:50",
+        "date": "2017-04-14",
+        "login": "sfernan1",
+        "pid": "14768",
+        "line": "tty7"
+      }]
+    },
+    "quail": {
+      "bwarren1": [{
+        "comment": ":0",
+        "idle": "old",
+        "name": "Benjamin Warren",
+        "time": "13:15",
+        "date": "2017-03-22",
+        "login": "bwarren1",
+        "pid": "25262",
+        "line": "tty7"
+      }],
+      "jnovak1": [{
+        "comment": ":20",
+        "idle": "old",
+        "name": "Jeffrey Novak",
+        "time": "19:53",
+        "date": "2017-04-19",
+        "login": "jnovak1",
+        "pid": "29763",
+        "line": "tty8"
+      }]
+    },
+    "oriole": {
+      "wfishbu1": [{
+        "comment": ":22",
+        "idle": "old",
+        "name": "Wesley Fishburn",
+        "time": "13:14",
+        "date": "2017-04-19",
+        "login": "wfishbu1",
+        "pid": "16511",
+        "line": "tty11"
+      }],
+      "lngoquy1": [{
+        "comment": ":23",
+        "idle": "old",
+        "name": "Lan Anh",
+        "time": "16:38",
+        "date": "2017-04-27",
+        "login": "lngoquy1",
+        "pid": "27580",
+        "line": "tty13"
+      }],
+      "lchen3": [{
+        "comment": ":21",
+        "idle": "old",
+        "name": "Leon Chen",
+        "time": "12:38",
+        "date": "2017-04-07",
+        "login": "lchen3",
+        "pid": "30140",
+        "line": "tty9"
+      }],
+      "zlin2": [{
+        "comment": ":20",
+        "idle": "old",
+        "name": "Zijin Lin",
+        "time": "14:15",
+        "date": "2017-04-14",
+        "login": "zlin2",
+        "pid": "32654",
+        "line": "tty10"
+      }],
+      "tkyaw1": [{
+        "comment": ":0",
+        "idle": "old",
+        "name": "Theint Kyaw",
+        "time": "19:06",
+        "date": "2017-04-11",
+        "login": "tkyaw1",
+        "pid": "15802",
+        "line": "tty7"
+      }]
+    },
+    "egret": {
+      "csivilo1": [{
+        "comment": ":20",
+        "idle": "old",
+        "name": "Carlo Sivilotti",
+        "time": "19:39",
+        "date": "2017-04-23",
+        "login": "csivilo1",
+        "pid": "8430",
+        "line": "tty8"
+      }],
+      "schen3": [{
+        "comment": ":21",
+        "idle": "old",
+        "name": "Shuangle Chen",
+        "time": "15:06",
+        "date": "2017-04-26",
+        "login": "schen3",
+        "pid": "22440",
+        "line": "tty9"
+      }],
+      "hhughes1": [{
+        "comment": ":0",
+        "idle": "old",
+        "name": "Hunter Hughes",
+        "time": "22:12",
+        "date": "2017-04-09",
+        "login": "hhughes1",
+        "pid": "6104",
+        "line": "tty7"
+      }],
+      "rpotlur1": [{
+        "comment": ":22",
+        "idle": "old",
+        "name": "Rajiv Potluri",
+        "time": "11:13",
+        "date": "2017-04-27",
+        "login": "rpotlur1",
+        "pid": "5487",
+        "line": "tty10"
+      }]
+    },
+    "heron": {},
+    "pigeon": {
+      "dmolina1": [{
+        "comment": ":21",
+        "idle": "old",
+        "name": "David Molina",
+        "time": "11:37",
+        "date": "2017-04-27",
+        "login": "dmolina1",
+        "pid": "3121",
+        "line": "tty9"
+      }],
+      "jnovak1": [{
+        "comment": ":20",
+        "idle": "old",
+        "name": "Jeffrey Novak",
+        "time": "13:15",
+        "date": "2017-04-19",
+        "login": "jnovak1",
+        "pid": "1115",
+        "line": "tty8"
+      }],
+      "asiegel1": [{
+        "comment": ":0",
+        "idle": "old",
+        "name": "Alexander Siegel",
+        "time": "17:04",
+        "date": "2017-04-10",
+        "login": "asiegel1",
+        "pid": "8450",
+        "line": "tty7"
+      }]
+    },
+    "buzzard": {
+      "csalama1": [{
+        "comment": ":0",
+        "idle": "old",
+        "name": "Colin Salama",
+        "time": "13:15",
+        "date": "2017-04-19",
+        "login": "csalama1",
+        "pid": "4737",
+        "line": "tty7"
+      }]
+    },
+    "magpie": {
+      "wchung3": [{
+        "comment": ":0",
+        "idle": "old",
+        "name": "Won Chung",
+        "time": "15:09",
+        "date": "2017-04-19",
+        "login": "wchung3",
+        "pid": "18475",
+        "line": "tty7"
+      }]
+    },
+    "cardinal": {
+      "atran1": [{
+        "comment": ":20",
+        "idle": "old",
+        "name": "Andy Tran",
+        "time": "15:02",
+        "date": "2017-04-26",
+        "login": "atran1",
+        "pid": "10719",
+        "line": "tty8"
+      }],
+      "njohns1": [{
+        "comment": ":0",
+        "idle": "old",
+        "name": "Nathaniel Johns",
+        "time": "21:27",
+        "date": "2017-04-14",
+        "login": "njohns1",
+        "pid": "25126",
+        "line": "tty7"
+      }]
+    },
+    "finch": {},
+    "lark": {
+      "llwin1": [{
+        "comment": ":20",
+        "idle": "old",
+        "name": "Lu Lwin",
+        "time": "19:46",
+        "date": "2017-04-09",
+        "login": "llwin1",
+        "pid": "8581",
+        "line": "tty8"
+      }]
+    },
+    "raven": {
+      "jjohnst2": [{
+        "comment": ":0",
+        "idle": "old",
+        "name": "John Griffin",
+        "time": "10:00",
+        "date": "2017-04-24",
+        "login": "jjohnst2",
+        "pid": "20473",
+        "line": "tty7"
+      }]
+    },
+    "eagle": {
+      "llwin1": [{
+        "comment": ":0",
+        "idle": "old",
+        "name": "Lu Lwin",
+        "time": "20:16",
+        "date": "2017-04-23",
+        "login": "llwin1",
+        "pid": "1652",
+        "line": "tty7"
+      }],
+      "cllop1": [{
+        "comment": ":21",
+        "idle": "old",
+        "name": "Cristian Llop",
+        "time": "16:37",
+        "date": "2017-04-27",
+        "login": "cllop1",
+        "pid": "2257",
+        "line": "tty9"
+      }],
+      "rbuckle1": [{
+        "comment": ":20",
+        "idle": "old",
+        "name": "Rye Buckley",
+        "time": "20:35",
+        "date": "2017-04-26",
+        "login": "rbuckle1",
+        "pid": "19654",
+        "line": "tty8"
+      }]
+    },
+    "ibis": {
+      "mkhan1": [{
+        "comment": ":20",
+        "idle": "old",
+        "name": "Misha Khan",
+        "time": "15:55",
+        "date": "2017-04-25",
+        "login": "mkhan1",
+        "pid": "23032",
+        "line": "tty8"
+      }],
+      "cli2": [{
+        "comment": ":0",
+        "idle": "old",
+        "name": "Cindy Li",
+        "time": "13:50",
+        "date": "2017-04-22",
+        "login": "cli2",
+        "pid": "8217",
+        "line": "tty7"
+      }]
+    },
+    "pimento": {},
+    "falcon": {
+      "ykewalr1": [{
+        "comment": ":20",
+        "idle": "old",
+        "name": "Yash Kewalramani",
+        "time": "11:32",
+        "date": "2017-04-26",
+        "login": "ykewalr1",
+        "pid": "9548",
+        "line": "tty11"
+      }],
+      "dgeschw1": [{
+        "comment": ":22",
+        "idle": "old",
+        "name": "David Geschwind",
+        "time": "15:01",
+        "date": "2017-04-12",
+        "login": "dgeschw1",
+        "pid": "27178",
+        "line": "tty10"
+      }],
+      "nhoang1": [{
+        "comment": ":21",
+        "idle": "old",
+        "name": "Nhung Hoang",
+        "time": "16:09",
+        "date": "2017-04-10",
+        "login": "nhoang1",
+        "pid": "12030",
+        "line": "tty9"
+      }],
+      "gsorian1": [{
+        "comment": ":0",
+        "idle": "old",
+        "name": "Griffin Soriano",
+        "time": "13:13",
+        "date": "2017-03-30",
+        "login": "gsorian1",
+        "pid": "27461",
+        "line": "tty7"
+      }]
+    },
+    "crane": {
+      "xzhang2": [{
+        "comment": ":0",
+        "idle": "old",
+        "name": "Xihan Zhang",
+        "time": "11:29",
+        "date": "2017-04-12",
+        "login": "xzhang2",
+        "pid": "32322",
+        "line": "tty7"
+      }]
+    },
+    "hawk": {
+      "jbaek1": [{
+        "comment": ":0",
+        "idle": "old",
+        "name": "Jong Hyup",
+        "time": "16:14",
+        "date": "2017-04-27",
+        "login": "jbaek1",
+        "pid": "2939",
+        "line": "tty7"
+      }]
+    },
+    "osprey": {
+      "jnovak1": [{
+        "comment": ":20",
+        "idle": "old",
+        "name": "Jeffrey Novak",
+        "time": "20:38",
+        "date": "2017-03-22",
+        "login": "jnovak1",
+        "pid": "5005",
+        "line": "tty8"
+      }],
+      "lngoquy1": [{
+        "comment": ":21",
+        "idle": "old",
+        "name": "Lan Anh",
+        "time": "16:15",
+        "date": "2017-04-27",
+        "login": "lngoquy1",
+        "pid": "7753",
+        "line": "tty9"
+      }],
+      "cholmgr1": [{
+        "comment": ":0",
+        "idle": "old",
+        "name": "Christina Holmgren",
+        "time": "19:23",
+        "date": "2017-03-16",
+        "login": "cholmgr1",
+        "pid": "14038",
+        "line": "tty7"
+      }]
+    },
+    "loon": {},
+    "flamingo": {},
+    "parrot": {
+      "adangol1": [{
+        "comment": ":0",
+        "idle": "old",
+        "name": "Aayushi Dangol",
+        "time": "19:07",
+        "date": "2017-04-23",
+        "login": "adangol1",
+        "pid": "6871",
+        "line": "tty7"
+      }]
+    },
+    "cuckoo": {},
+    "bluejay": {},
+    "dodo": {},
+    "ostrich": {
+      "ebowman1": [{
+        "comment": ":0",
+        "idle": "old",
+        "name": "Emily Bowman",
+        "time": "13:15",
+        "date": "2017-04-19",
+        "login": "ebowman1",
+        "pid": "28658",
+        "line": "tty7"
+      }]
+    },
+    "puffin": {
+      "ashmoys1": [{
+        "comment": ":20",
+        "idle": "old",
+        "name": "Amy Shmoys",
+        "time": "13:17",
+        "date": "2017-04-19",
+        "login": "ashmoys1",
+        "pid": "8364",
+        "line": "tty8"
+      }],
+      "zwillia1": [{
+        "comment": ":0",
+        "idle": "old",
+        "name": "Zara Williams-Nicholas",
+        "time": "21:04",
+        "date": "2017-03-28",
+        "login": "zwillia1",
+        "pid": "22676",
+        "line": "tty7"
+      }]
+    },
+    "sparrow": {},
+    "seagull": {},
+    "robin": {
+      "dgeschw1": [{
+        "comment": ":0",
+        "idle": "old",
+        "name": "David Geschwind",
+        "time": "14:19",
+        "date": "2017-04-21",
+        "login": "dgeschw1",
+        "pid": "2555",
+        "line": "tty9"
+      }],
+      "mpiazza1": [{
+        "comment": ":20",
+        "idle": "old",
+        "name": "Michael Piazza",
+        "time": "14:11",
+        "date": "2017-04-07",
+        "login": "mpiazza1",
+        "pid": "11482",
+        "line": "tty8"
+      }]
+    }
+  },
+  "hosts.offices": {
+    "lavender": {
+      "fontes": [{
+        "comment": ":0",
+        "idle": "old",
+        "name": "Lila Fontes",
+        "time": "15:45",
+        "date": "2017-04-06",
+        "login": "fontes",
+        "pid": "1690",
+        "line": "tty7"
+      }]
+    },
+    "water": {
+      "richardw": [{
+        "comment": "witty.cs.swarthmore.edu",
+        "idle": "02:52",
+        "name": "Richard Wicentowski",
+        "time": "13:55",
+        "date": "2017-04-27",
+        "login": "richardw",
+        "pid": "13765",
+        "line": "pts/2"
+      }]
+    },
+    "clove": {
+      "bryce": [{
+        "comment": ":0",
+        "idle": "old",
+        "name": "Bryce As",
+        "time": "09:08",
+        "date": "2017-04-07",
+        "login": "bryce",
+        "pid": "2600",
+        "line": "tty7"
+      }, {
+        "comment": ":0.0",
+        "idle": "old",
+        "name": "Bryce As",
+        "time": "15:21",
+        "date": "2017-04-19",
+        "login": "bryce",
+        "pid": "184057",
+        "line": "pts/1"
+      }]
+    },
+    "toucan*": {
+      "ERROR": "DOWN timed out"
+    },
+    "macaw": {},
+    "dill": {},
+    "mint": {
+      "mgagne1": [{
+        "comment": ":0",
+        "idle": "old",
+        "name": "Martin Gagne",
+        "time": "11:11",
+        "date": "2017-04-26",
+        "login": "mgagne1",
+        "pid": "13545",
+        "line": "tty7"
+      }]
+    },
+    "licorice": {
+      "soni": [{
+        "comment": ":0",
+        "idle": "old",
+        "name": "Ameet Soni",
+        "time": "14:40",
+        "date": "2017-03-09",
+        "login": "soni",
+        "pid": "13624",
+        "line": "tty7"
+      }, {
+        "comment": "130.58.104.192",
+        "idle": "00:27",
+        "name": "Ameet Soni",
+        "time": "16:20",
+        "date": "2017-04-27",
+        "login": "soni",
+        "pid": "13730",
+        "line": "pts/6"
+      }]
+    },
+    "cumin": {
+      "adanner": [{
+        "comment": ":0",
+        "idle": "old",
+        "name": "Andrew Danner",
+        "time": "15:59",
+        "date": "2017-04-06",
+        "login": "adanner",
+        "pid": "1925",
+        "line": "tty7"
+      }, {
+        "comment": "100.34.240.84",
+        "idle": "old",
+        "name": "Andrew Danner",
+        "time": "16:16",
+        "date": "2017-04-22",
+        "login": "adanner",
+        "pid": "11632",
+        "line": "pts/3"
+      }]
+    },
+    "paprika": {
+      "newhall": [{
+        "comment": ":0",
+        "idle": "old",
+        "name": "Tia Newhall",
+        "time": "13:37",
+        "date": "2017-04-03",
+        "login": "newhall",
+        "pid": "11595",
+        "line": "tty7"
+      }, {
+        "comment": ":0",
+        "idle": "old",
+        "name": "Tia Newhall",
+        "time": "13:37",
+        "date": "2017-04-03",
+        "login": "newhall",
+        "pid": "11733",
+        "line": "pts/0"
+      }]
+    },
+    "stork": {},
+    "sesame": {
+      "kwebb": [{
+        "comment": ":0",
+        "idle": "old",
+        "name": "Kevin Webb",
+        "time": "10:18",
+        "date": "2017-03-07",
+        "login": "kwebb",
+        "pid": "13745",
+        "line": "tty7"
+      }]
+    },
+    "cilantro": {
+      "brody": [{
+        "comment": ":0",
+        "idle": "old",
+        "name": "Joshua Brody",
+        "time": "09:19",
+        "date": "2017-04-21",
+        "login": "brody",
+        "pid": "26319",
+        "line": "tty7"
+      }]
+    },
+    "chive": {},
+    "hyssop": {},
+    "horseradish": {},
+    "curry": {
+      "knerr": [{
+        "comment": ":0",
+        "idle": "old",
+        "name": "Jeffrey M.",
+        "time": "14:58",
+        "date": "2017-04-27",
+        "login": "knerr",
+        "pid": "19191",
+        "line": "tty7"
+      }]
+    }
+  },
+  "hosts.overflow": {
+    "coconut": {
+      "jlangli1": [{
+        "comment": "tmux(74070).%0",
+        "idle": "old",
+        "name": "Jonah Langlieb",
+        "time": "16:02",
+        "date": "2017-03-11",
+        "login": "jlangli1",
+        "pid": "74070",
+        "line": "pts/9"
+      }, {
+        "comment": "tmux(74070).%2",
+        "idle": "old",
+        "name": "Jonah Langlieb",
+        "time": "16:02",
+        "date": "2017-03-11",
+        "login": "jlangli1",
+        "pid": "74070",
+        "line": "pts/10"
+      }, {
+        "comment": "tmux(74070).%3",
+        "idle": "old",
+        "name": "Jonah Langlieb",
+        "time": "16:02",
+        "date": "2017-03-11",
+        "login": "jlangli1",
+        "pid": "74070",
+        "line": "pts/11"
+      }],
+      "mzavez1": [{
+        "comment": "130.58.99.50",
+        "idle": "old",
+        "name": "Melissa Zavez",
+        "time": "09:37",
+        "date": "2017-04-13",
+        "login": "mzavez1",
+        "pid": "782869",
+        "line": "pts/22"
+      }],
+      "nsandal1": [{
+        "comment": ":0",
+        "idle": "old",
+        "name": "Nathaniel Sandalow-Ash",
+        "time": "16:36",
+        "date": "2017-03-20",
+        "login": "nsandal1",
+        "pid": "260135",
+        "line": "tty7"
+      }],
+      "wcolgan1": [{
+        "comment": ":23",
+        "idle": "old",
+        "name": "William Colgan",
+        "time": "19:37",
+        "date": "2017-04-26",
+        "login": "wcolgan1",
+        "pid": "1076521",
+        "line": "tty13"
+      }],
+      "eremy1": [{
+        "comment": "tmux(7851).%0",
+        "idle": "old",
+        "name": "Emma Remy",
+        "time": "19:47",
+        "date": "2017-03-06",
+        "login": "eremy1",
+        "pid": "7851",
+        "line": "pts/1"
+      }, {
+        "comment": "tmux(7851).%1",
+        "idle": "old",
+        "name": "Emma Remy",
+        "time": "19:47",
+        "date": "2017-03-06",
+        "login": "eremy1",
+        "pid": "7851",
+        "line": "pts/2"
+      }, {
+        "comment": "tmux(7851).%2",
+        "idle": "old",
+        "name": "Emma Remy",
+        "time": "13:26",
+        "date": "2017-03-09",
+        "login": "eremy1",
+        "pid": "7851",
+        "line": "pts/3"
+      }, {
+        "comment": "tmux(7851).%3",
+        "idle": "old",
+        "name": "Emma Remy",
+        "time": "13:26",
+        "date": "2017-03-09",
+        "login": "eremy1",
+        "pid": "7851",
+        "line": "pts/4"
+      }, {
+        "comment": "tmux(7851).%8",
+        "idle": "old",
+        "name": "Emma Remy",
+        "time": "13:15",
+        "date": "2017-03-14",
+        "login": "eremy1",
+        "pid": "7851",
+        "line": "pts/5"
+      }, {
+        "comment": "tmux(7851).%6",
+        "idle": "old",
+        "name": "Emma Remy",
+        "time": "21:34",
+        "date": "2017-03-13",
+        "login": "eremy1",
+        "pid": "7851",
+        "line": "pts/6"
+      }, {
+        "comment": "tmux(7851).%4",
+        "idle": "old",
+        "name": "Emma Remy",
+        "time": "09:53",
+        "date": "2017-03-11",
+        "login": "eremy1",
+        "pid": "7851",
+        "line": "pts/7"
+      }, {
+        "comment": "tmux(7851).%5",
+        "idle": "old",
+        "name": "Emma Remy",
+        "time": "09:53",
+        "date": "2017-03-11",
+        "login": "eremy1",
+        "pid": "7851",
+        "line": "pts/8"
+      }, {
+        "comment": "tmux(7851).%7",
+        "idle": "old",
+        "name": "Emma Remy",
+        "time": "21:34",
+        "date": "2017-03-13",
+        "login": "eremy1",
+        "pid": "7851",
+        "line": "pts/12"
+      }, {
+        "comment": "tmux(7851).%9",
+        "idle": "old",
+        "name": "Emma Remy",
+        "time": "13:15",
+        "date": "2017-03-14",
+        "login": "eremy1",
+        "pid": "7851",
+        "line": "pts/13"
+      }, {
+        "comment": "tmux(7851).%10",
+        "idle": "old",
+        "name": "Emma Remy",
+        "time": "13:37",
+        "date": "2017-03-14",
+        "login": "eremy1",
+        "pid": "7851",
+        "line": "pts/15"
+      }, {
+        "comment": "tmux(7851).%11",
+        "idle": "old",
+        "name": "Emma Remy",
+        "time": "13:37",
+        "date": "2017-03-14",
+        "login": "eremy1",
+        "pid": "7851",
+        "line": "pts/16"
+      }],
+      "lpacker1": [{
+        "comment": ":22",
+        "idle": "old",
+        "name": "Liam Packer",
+        "time": "16:48",
+        "date": "2017-04-13",
+        "login": "lpacker1",
+        "pid": "789200",
+        "line": "tty10"
+      }],
+      "kanders4": [{
+        "comment": ":20",
+        "idle": "old",
+        "name": "Katherine Anderson",
+        "time": "15:32",
+        "date": "2017-04-20",
+        "login": "kanders4",
+        "pid": "932305",
+        "line": "tty11"
+      }],
+      "aconant1": [{
+        "comment": "tmux(632545).%0",
+        "idle": "old",
+        "name": "Andrew Conant",
+        "time": "01:45",
+        "date": "2017-04-07",
+        "login": "aconant1",
+        "pid": "632545",
+        "line": "pts/17"
+      }, {
+        "comment": "tmux(632545).%1",
+        "idle": "old",
+        "name": "Andrew Conant",
+        "time": "01:46",
+        "date": "2017-04-07",
+        "login": "aconant1",
+        "pid": "632545",
+        "line": "pts/19"
+      }, {
+        "comment": "tmux(632545).%5",
+        "idle": "old",
+        "name": "Andrew Conant",
+        "time": "21:40",
+        "date": "2017-04-18",
+        "login": "aconant1",
+        "pid": "632545",
+        "line": "pts/25"
+      }, {
+        "comment": "tmux(632545).%4",
+        "idle": "old",
+        "name": "Andrew Conant",
+        "time": "03:08",
+        "date": "2017-04-07",
+        "login": "aconant1",
+        "pid": "632545",
+        "line": "pts/21"
+      }, {
+        "comment": "tmux(632545).%7",
+        "idle": "old",
+        "name": "Andrew Conant",
+        "time": "23:40",
+        "date": "2017-04-21",
+        "login": "aconant1",
+        "pid": "632545",
+        "line": "pts/28"
+      }],
+      "tfeldma1": [{
+        "comment": ":21",
+        "idle": "old",
+        "name": "Tobin Feldman-Fitzthum",
+        "time": "14:39",
+        "date": "2017-04-03",
+        "login": "tfeldma1",
+        "pid": "556886",
+        "line": "tty9"
+      }]
+    },
+    "marjoram": {
+      "gpangel1": [{
+        "comment": ":0",
+        "idle": "old",
+        "name": "Gabriella Pangelinan",
+        "time": "13:25",
+        "date": "2017-04-17",
+        "login": "gpangel1",
+        "pid": "55460",
+        "line": "tty7"
+      }],
+      "kkwok1": [{
+        "comment": ":20",
+        "idle": "old",
+        "name": "Katherine Kwok",
+        "time": "16:15",
+        "date": "2017-04-27",
+        "login": "kkwok1",
+        "pid": "235894",
+        "line": "tty8"
+      }]
+    },
+    "sumac": {
+      "kgwon1": [{
+        "comment": "130.58.162.215",
+        "idle": "01:15",
+        "name": "Kenneth Gwon",
+        "time": "15:03",
+        "date": "2017-04-27",
+        "login": "kgwon1",
+        "pid": "178639",
+        "line": "pts/1"
+      }],
+      "cholmgr1": [{
+        "comment": ":0",
+        "idle": "old",
+        "name": "Christina Holmgren",
+        "time": "19:14",
+        "date": "2017-04-26",
+        "login": "cholmgr1",
+        "pid": "157870",
+        "line": "tty7"
+      }]
+    },
+    "perilla": {
+      "hyan1": [{
+        "comment": ":0",
+        "idle": "old",
+        "name": "Hao-Tong Yan",
+        "time": "13:15",
+        "date": "2017-04-27",
+        "login": "hyan1",
+        "pid": "250407",
+        "line": "tty7"
+      }]
+    },
+    "cayenne": {
+      "nholema1": [{
+        "comment": ":0",
+        "idle": "old",
+        "name": "Nathan Holeman",
+        "time": "22:20",
+        "date": "2017-04-26",
+        "login": "nholema1",
+        "pid": "277099",
+        "line": "tty7"
+      }],
+      "kpasill1": [{
+        "comment": ":20",
+        "idle": "old",
+        "name": "Kaitelyn Pasillas",
+        "time": "14:40",
+        "date": "2017-04-27",
+        "login": "kpasill1",
+        "pid": "287860",
+        "line": "tty8"
+      }]
+    },
+    "olive": {
+      "yyi1": [{
+        "comment": ":20",
+        "idle": "old",
+        "name": "Yang Yi",
+        "time": "20:14",
+        "date": "2017-04-16",
+        "login": "yyi1",
+        "pid": "53748",
+        "line": "tty8"
+      }],
+      "tyu2": [{
+        "comment": ":21",
+        "idle": "old",
+        "name": "Yan Ting",
+        "time": "12:22",
+        "date": "2017-04-27",
+        "login": "tyu2",
+        "pid": "301911",
+        "line": "tty10"
+      }],
+      "eremy1": [{
+        "comment": "tmux(22488).%0",
+        "idle": "old",
+        "name": "Emma Remy",
+        "time": "10:29",
+        "date": "2017-04-15",
+        "login": "eremy1",
+        "pid": "22488",
+        "line": "pts/2"
+      }, {
+        "comment": "tmux(22488).%1",
+        "idle": "old",
+        "name": "Emma Remy",
+        "time": "10:29",
+        "date": "2017-04-15",
+        "login": "eremy1",
+        "pid": "22488",
+        "line": "pts/3"
+      }],
+      "lpacker1": [{
+        "comment": ":0",
+        "idle": "old",
+        "name": "Liam Packer",
+        "time": "15:21",
+        "date": "2017-04-26",
+        "login": "lpacker1",
+        "pid": "276612",
+        "line": "tty9"
+      }]
+    },
+    "fennel": {
+      "somalle1": [{
+        "comment": ":0",
+        "idle": "old",
+        "name": "Sophia O'Malley-Krohn",
+        "time": "14:02",
+        "date": "2017-04-26",
+        "login": "somalle1",
+        "pid": "43241",
+        "line": "tty7"
+      }, {
+        "comment": ":20",
+        "idle": "old",
+        "name": "Sophia O'Malley-Krohn",
+        "time": "16:05",
+        "date": "2017-04-27",
+        "login": "somalle1",
+        "pid": "89706",
+        "line": "tty8"
+      }]
+    },
+    "molasses": {
+      "wcolgan1": [{
+        "comment": ":20",
+        "idle": "old",
+        "name": "William Colgan",
+        "time": "21:31",
+        "date": "2017-04-24",
+        "login": "wcolgan1",
+        "pid": "249356",
+        "line": "tty8"
+      }],
+      "swang5": [{
+        "comment": ":0",
+        "idle": "old",
+        "name": "Shiqin Wang",
+        "time": "16:04",
+        "date": "2017-04-19",
+        "login": "swang5",
+        "pid": "160987",
+        "line": "tty7"
+      }]
+    },
+    "stew": {},
+    "orange": {
+      "hhughes1": [{
+        "comment": "130.58.99.186",
+        "idle": "00:02",
+        "name": "Hunter Hughes",
+        "time": "15:50",
+        "date": "2017-04-27",
+        "login": "hhughes1",
+        "pid": "632002",
+        "line": "pts/0"
+      }],
+      "jkay2": [{
+        "comment": ":0",
+        "idle": "old",
+        "name": "Jonathan Kay",
+        "time": "14:40",
+        "date": "2017-04-27",
+        "login": "jkay2",
+        "pid": "628866",
+        "line": "tty7"
+      }]
+    },
+    "tamarind": {
+      "jbaek1": [{
+        "comment": ":20",
+        "idle": "old",
+        "name": "Jong Hyup",
+        "time": "15:46",
+        "date": "2017-04-24",
+        "login": "jbaek1",
+        "pid": "178864",
+        "line": "tty8"
+      }],
+      "tnguyen4": [{
+        "comment": ":0",
+        "idle": "old",
+        "name": "Tuan Nguyen",
+        "time": "11:55",
+        "date": "2017-04-22",
+        "login": "tnguyen4",
+        "pid": "142283",
+        "line": "tty7"
+      }],
+      "aconant1": [{
+        "comment": "tmux(160938).%0",
+        "idle": "old",
+        "name": "Andrew Conant",
+        "time": "14:18",
+        "date": "2017-04-23",
+        "login": "aconant1",
+        "pid": "160938",
+        "line": "pts/3"
+      }, {
+        "comment": "tmux(160938).%1",
+        "idle": "old",
+        "name": "Andrew Conant",
+        "time": "14:18",
+        "date": "2017-04-23",
+        "login": "aconant1",
+        "pid": "160938",
+        "line": "pts/4"
+      }, {
+        "comment": "tmux(160938).%2",
+        "idle": "old",
+        "name": "Andrew Conant",
+        "time": "22:01",
+        "date": "2017-04-23",
+        "login": "aconant1",
+        "pid": "160938",
+        "line": "pts/5"
+      }]
+    },
+    "egg": {
+      "tlai1": [{
+        "comment": ":0",
+        "idle": "old",
+        "name": "Tanner Lai",
+        "time": "16:43",
+        "date": "2017-04-26",
+        "login": "tlai1",
+        "pid": "808289",
+        "line": "tty7"
+      }],
+      "ckeane1": [{
+        "comment": "tmux(345018).%0",
+        "idle": "old",
+        "name": "Connor Keane",
+        "time": "13:54",
+        "date": "2017-03-31",
+        "login": "ckeane1",
+        "pid": "345018",
+        "line": "pts/2"
+      }]
+    }
+  },
+  "hosts.fsu": {
+    "web": {},
+    "syrup*": {
+      "ERROR": "AUTHENTICATION ERROR"
+    },
+    "parsley": {
+      "aconant1": [{
+        "comment": "tmux(15713).%0",
+        "idle": "old",
+        "name": "Andrew Conant",
+        "time": "21:26",
+        "date": "2017-03-30",
+        "login": "aconant1",
+        "pid": "15713",
+        "line": "pts/3"
+      }, {
+        "comment": "tmux(15713).%2",
+        "idle": "old",
+        "name": "Andrew Conant",
+        "time": "21:47",
+        "date": "2017-03-30",
+        "login": "aconant1",
+        "pid": "15713",
+        "line": "pts/6"
+      }, {
+        "comment": "tmux(15713).%3",
+        "idle": "old",
+        "name": "Andrew Conant",
+        "time": "22:15",
+        "date": "2017-03-30",
+        "login": "aconant1",
+        "pid": "15713",
+        "line": "pts/7"
+      }, {
+        "comment": "tmux(15713).%7",
+        "idle": "old",
+        "name": "Andrew Conant",
+        "time": "22:52",
+        "date": "2017-04-07",
+        "login": "aconant1",
+        "pid": "15713",
+        "line": "pts/11"
+      }, {
+        "comment": "tmux(15713).%8",
+        "idle": "old",
+        "name": "Andrew Conant",
+        "time": "23:00",
+        "date": "2017-04-07",
+        "login": "aconant1",
+        "pid": "15713",
+        "line": "pts/12"
+      }],
+      "trahman1": [{
+        "comment": "130.58.98.216",
+        "idle": ".",
+        "name": "Tahmid Rahman",
+        "time": "15:46",
+        "date": "2017-04-27",
+        "login": "trahman1",
+        "pid": "11681",
+        "line": "pts/0"
+      }, {
+        "comment": "tmux(12626).%0",
+        "idle": ".",
+        "name": "Tahmid Rahman",
+        "time": "16:12",
+        "date": "2017-04-27",
+        "login": "trahman1",
+        "pid": "12626",
+        "line": "pts/8"
+      }, {
+        "comment": "tmux(12626).%2",
+        "idle": "00:01",
+        "name": "Tahmid Rahman",
+        "time": "16:44",
+        "date": "2017-04-27",
+        "login": "trahman1",
+        "pid": "12626",
+        "line": "pts/14"
+      }],
+      "eremy1": [{
+        "comment": "tmux(1470).%18",
+        "idle": "05:24",
+        "name": "Emma Remy",
+        "time": "11:24",
+        "date": "2017-04-27",
+        "login": "eremy1",
+        "pid": "1470",
+        "line": "pts/1"
+      }, {
+        "comment": "tmux(1470).%19",
+        "idle": "05:24",
+        "name": "Emma Remy",
+        "time": "11:25",
+        "date": "2017-04-27",
+        "login": "eremy1",
+        "pid": "1470",
+        "line": "pts/2"
+      }, {
+        "comment": "tmux(1470).%0",
+        "idle": "old",
+        "name": "Emma Remy",
+        "time": "20:00",
+        "date": "2017-03-15",
+        "login": "eremy1",
+        "pid": "1470",
+        "line": "pts/4"
+      }, {
+        "comment": "tmux(1470).%1",
+        "idle": "old",
+        "name": "Emma Remy",
+        "time": "20:01",
+        "date": "2017-03-15",
+        "login": "eremy1",
+        "pid": "1470",
+        "line": "pts/5"
+      }, {
+        "comment": "tmux(1470).%12",
+        "idle": "old",
+        "name": "Emma Remy",
+        "time": "12:32",
+        "date": "2017-04-16",
+        "login": "eremy1",
+        "pid": "1470",
+        "line": "pts/9"
+      }, {
+        "comment": "tmux(1470).%13",
+        "idle": "old",
+        "name": "Emma Remy",
+        "time": "12:32",
+        "date": "2017-04-16",
+        "login": "eremy1",
+        "pid": "1470",
+        "line": "pts/10"
+      }]
+    },
+    "oldspice*": {
+      "ERROR": "DOWN [Errno None] Unable to connect to port 22 on 130.58.68.32"
+    },
+    "mango": {},
+    "rosemary": {
+      "aconant1": [{
+        "comment": "tmux(219757).%0",
+        "idle": "old",
+        "name": "Andrew Conant",
+        "time": "10:59",
+        "date": "2017-03-18",
+        "login": "aconant1",
+        "pid": "219757",
+        "line": "pts/2"
+      }, {
+        "comment": "tmux(219757).%2",
+        "idle": "old",
+        "name": "Andrew Conant",
+        "time": "11:28",
+        "date": "2017-03-18",
+        "login": "aconant1",
+        "pid": "219757",
+        "line": "pts/5"
+      }, {
+        "comment": "tmux(219757).%3",
+        "idle": "old",
+        "name": "Andrew Conant",
+        "time": "11:29",
+        "date": "2017-03-18",
+        "login": "aconant1",
+        "pid": "219757",
+        "line": "pts/6"
+      }, {
+        "comment": "tmux(219757).%4",
+        "idle": "old",
+        "name": "Andrew Conant",
+        "time": "11:28",
+        "date": "2017-03-26",
+        "login": "aconant1",
+        "pid": "219757",
+        "line": "pts/10"
+      }, {
+        "comment": "tmux(219757).%9",
+        "idle": "old",
+        "name": "Andrew Conant",
+        "time": "13:06",
+        "date": "2017-03-26",
+        "login": "aconant1",
+        "pid": "219757",
+        "line": "pts/12"
+      }, {
+        "comment": "tmux(219757).%18",
+        "idle": "old",
+        "name": "Andrew Conant",
+        "time": "14:05",
+        "date": "2017-04-04",
+        "login": "aconant1",
+        "pid": "219757",
+        "line": "pts/13"
+      }, {
+        "comment": "tmux(219757).%15",
+        "idle": "old",
+        "name": "Andrew Conant",
+        "time": "14:40",
+        "date": "2017-03-26",
+        "login": "aconant1",
+        "pid": "219757",
+        "line": "pts/14"
+      }, {
+        "comment": "tmux(219757).%20",
+        "idle": "old",
+        "name": "Andrew Conant",
+        "time": "11:02",
+        "date": "2017-04-22",
+        "login": "aconant1",
+        "pid": "219757",
+        "line": "pts/18"
+      }],
+      "kpasill1": [{
+        "comment": ":20",
+        "idle": "old",
+        "name": "Kaitelyn Pasillas",
+        "time": "09:58",
+        "date": "2017-03-20",
+        "login": "kpasill1",
+        "pid": "259302",
+        "line": "tty8"
+      }],
+      "yhigash1": [{
+        "comment": ":0",
+        "idle": "old",
+        "name": "Yosuke Higashi",
+        "time": "14:41",
+        "date": "2017-03-12",
+        "login": "yhigash1",
+        "pid": "70612",
+        "line": "tty7"
+      }],
+      "eremy1": [{
+        "comment": "tmux(85671).%0",
+        "idle": "old",
+        "name": "Emma Remy",
+        "time": "14:52",
+        "date": "2017-03-13",
+        "login": "eremy1",
+        "pid": "85671",
+        "line": "pts/3"
+      }, {
+        "comment": "tmux(85671).%1",
+        "idle": "old",
+        "name": "Emma Remy",
+        "time": "14:52",
+        "date": "2017-03-13",
+        "login": "eremy1",
+        "pid": "85671",
+        "line": "pts/4"
+      }, {
+        "comment": "tmux(85671).%11",
+        "idle": "old",
+        "name": "Emma Remy",
+        "time": "10:38",
+        "date": "2017-04-11",
+        "login": "eremy1",
+        "pid": "85671",
+        "line": "pts/7"
+      }, {
+        "comment": "tmux(85671).%12",
+        "idle": "old",
+        "name": "Emma Remy",
+        "time": "10:38",
+        "date": "2017-04-11",
+        "login": "eremy1",
+        "pid": "85671",
+        "line": "pts/8"
+      }, {
+        "comment": "tmux(85671).%7",
+        "idle": "old",
+        "name": "Emma Remy",
+        "time": "17:20",
+        "date": "2017-04-02",
+        "login": "eremy1",
+        "pid": "85671",
+        "line": "pts/9"
+      }, {
+        "comment": "tmux(85671).%8",
+        "idle": "old",
+        "name": "Emma Remy",
+        "time": "17:20",
+        "date": "2017-04-02",
+        "login": "eremy1",
+        "pid": "85671",
+        "line": "pts/11"
+      }, {
+        "comment": "tmux(85671).%13",
+        "idle": "old",
+        "name": "Emma Remy",
+        "time": "13:15",
+        "date": "2017-04-16",
+        "login": "eremy1",
+        "pid": "85671",
+        "line": "pts/16"
+      }, {
+        "comment": "tmux(85671).%14",
+        "idle": "old",
+        "name": "Emma Remy",
+        "time": "13:15",
+        "date": "2017-04-16",
+        "login": "eremy1",
+        "pid": "85671",
+        "line": "pts/17"
+      }]
+    },
+    "ubuntu*": {
+      "ERROR": "AUTHENTICATION ERROR"
+    },
+    "beet*": {
+      "ERROR": "AUTHENTICATION ERROR"
+    }
+  },
+  "hosts.robotlab": {
+    "vinegar": {},
+    "parsley": {
+      "aconant1": [{
+        "comment": "tmux(15713).%0",
+        "idle": "old",
+        "name": "Andrew Conant",
+        "time": "21:26",
+        "date": "2017-03-30",
+        "login": "aconant1",
+        "pid": "15713",
+        "line": "pts/3"
+      }, {
+        "comment": "tmux(15713).%2",
+        "idle": "old",
+        "name": "Andrew Conant",
+        "time": "21:47",
+        "date": "2017-03-30",
+        "login": "aconant1",
+        "pid": "15713",
+        "line": "pts/6"
+      }, {
+        "comment": "tmux(15713).%3",
+        "idle": "old",
+        "name": "Andrew Conant",
+        "time": "22:15",
+        "date": "2017-03-30",
+        "login": "aconant1",
+        "pid": "15713",
+        "line": "pts/7"
+      }, {
+        "comment": "tmux(15713).%7",
+        "idle": "old",
+        "name": "Andrew Conant",
+        "time": "22:52",
+        "date": "2017-04-07",
+        "login": "aconant1",
+        "pid": "15713",
+        "line": "pts/11"
+      }, {
+        "comment": "tmux(15713).%8",
+        "idle": "old",
+        "name": "Andrew Conant",
+        "time": "23:00",
+        "date": "2017-04-07",
+        "login": "aconant1",
+        "pid": "15713",
+        "line": "pts/12"
+      }],
+      "trahman1": [{
+        "comment": "130.58.98.216",
+        "idle": ".",
+        "name": "Tahmid Rahman",
+        "time": "15:46",
+        "date": "2017-04-27",
+        "login": "trahman1",
+        "pid": "11681",
+        "line": "pts/0"
+      }, {
+        "comment": "tmux(12626).%0",
+        "idle": ".",
+        "name": "Tahmid Rahman",
+        "time": "16:12",
+        "date": "2017-04-27",
+        "login": "trahman1",
+        "pid": "12626",
+        "line": "pts/8"
+      }, {
+        "comment": "tmux(12626).%2",
+        "idle": "00:01",
+        "name": "Tahmid Rahman",
+        "time": "16:44",
+        "date": "2017-04-27",
+        "login": "trahman1",
+        "pid": "12626",
+        "line": "pts/14"
+      }],
+      "eremy1": [{
+        "comment": "tmux(1470).%18",
+        "idle": "05:24",
+        "name": "Emma Remy",
+        "time": "11:24",
+        "date": "2017-04-27",
+        "login": "eremy1",
+        "pid": "1470",
+        "line": "pts/1"
+      }, {
+        "comment": "tmux(1470).%19",
+        "idle": "05:24",
+        "name": "Emma Remy",
+        "time": "11:25",
+        "date": "2017-04-27",
+        "login": "eremy1",
+        "pid": "1470",
+        "line": "pts/2"
+      }, {
+        "comment": "tmux(1470).%0",
+        "idle": "old",
+        "name": "Emma Remy",
+        "time": "20:00",
+        "date": "2017-03-15",
+        "login": "eremy1",
+        "pid": "1470",
+        "line": "pts/4"
+      }, {
+        "comment": "tmux(1470).%1",
+        "idle": "old",
+        "name": "Emma Remy",
+        "time": "20:01",
+        "date": "2017-03-15",
+        "login": "eremy1",
+        "pid": "1470",
+        "line": "pts/5"
+      }, {
+        "comment": "tmux(1470).%12",
+        "idle": "old",
+        "name": "Emma Remy",
+        "time": "12:32",
+        "date": "2017-04-16",
+        "login": "eremy1",
+        "pid": "1470",
+        "line": "pts/9"
+      }, {
+        "comment": "tmux(1470).%13",
+        "idle": "old",
+        "name": "Emma Remy",
+        "time": "12:32",
+        "date": "2017-04-16",
+        "login": "eremy1",
+        "pid": "1470",
+        "line": "pts/10"
+      }]
+    },
+    "elderberry": {
+      "yyi1": [{
+        "comment": ":20",
+        "idle": "old",
+        "name": "Yang Yi",
+        "time": "15:03",
+        "date": "2017-04-26",
+        "login": "yyi1",
+        "pid": "18495",
+        "line": "tty9"
+      }],
+      "trahman1": [{
+        "comment": ":0",
+        "idle": "old",
+        "name": "Tahmid Rahman",
+        "time": "13:23",
+        "date": "2017-04-20",
+        "login": "trahman1",
+        "pid": "12875",
+        "line": "tty8"
+      }, {
+        "comment": "tmux(13357).%0",
+        "idle": "old",
+        "name": "Tahmid Rahman",
+        "time": "13:24",
+        "date": "2017-04-20",
+        "login": "trahman1",
+        "pid": "13357",
+        "line": "pts/1"
+      }, {
+        "comment": "tmux(13357).%1",
+        "idle": "old",
+        "name": "Tahmid Rahman",
+        "time": "13:50",
+        "date": "2017-04-20",
+        "login": "trahman1",
+        "pid": "13357",
+        "line": "pts/2"
+      }, {
+        "comment": "tmux(13357).%2",
+        "idle": "old",
+        "name": "Tahmid Rahman",
+        "time": "13:52",
+        "date": "2017-04-20",
+        "login": "trahman1",
+        "pid": "13357",
+        "line": "pts/3"
+      }]
+    },
+    "squash": {},
+    "chicory": {
+      "azhao2": [{
+        "comment": ":0",
+        "idle": "old",
+        "name": "Annie Zhao",
+        "time": "16:17",
+        "date": "2017-04-12",
+        "login": "azhao2",
+        "pid": "17997",
+        "line": "tty8"
+      }]
+    },
+    "gale": {},
+    "carrot": {},
+    "cucumber": {
+      "tyu2": [{
+        "comment": ":20",
+        "idle": "old",
+        "name": "Yan Ting",
+        "time": "16:13",
+        "date": "2017-04-27",
+        "login": "tyu2",
+        "pid": "2667",
+        "line": "tty9"
+      }],
+      "dmartsc1": [{
+        "comment": ":0",
+        "idle": "old",
+        "name": "Diana Martschenko",
+        "time": "15:04",
+        "date": "2017-03-29",
+        "login": "dmartsc1",
+        "pid": "25612",
+        "line": "tty8"
+      }]
+    },
+    "cinnamon": {},
+    "broccoli": {
+      "schen3": [{
+        "comment": ":0",
+        "idle": "old",
+        "name": "Shuangle Chen",
+        "time": "16:06",
+        "date": "2017-04-22",
+        "login": "schen3",
+        "pid": "10832",
+        "line": "tty7"
+      }]
+    },
+    "cocoa": {}
+  },
+  "hosts.virtual": {
+    "condor*": {
+      "ERROR": "AUTHENTICATION ERROR"
+    },
+    "clickers*": {
+      "ERROR": "AUTHENTICATION ERROR"
+    },
+    "ldap2*": {
+      "ERROR": "DOWN [Errno None] Unable to connect to port 22 on 130.58.68.3"
+    },
+    "cicely*": {
+      "ERROR": "AUTHENTICATION ERROR"
+    },
+    "oldbay*": {
+      "ERROR": "AUTHENTICATION ERROR"
+    },
+    "password*": {
+      "ERROR": "AUTHENTICATION ERROR"
+    }
+  },
+  "hosts.etc": {
+    "web": {},
+    "mango": {},
+    "starfish": {}
+  },
+  "hosts.non-critical-servers": {
+    "radish*": {
+      "ERROR": "DOWN timed out"
+    },
+    "salt*": {
+      "ERROR": "AUTHENTICATION ERROR"
+    },
+    "git*": {
+      "ERROR": "AUTHENTICATION ERROR"
+    },
+    "water": {
+      "richardw": [{
+        "comment": "witty.cs.swarthmore.edu",
+        "idle": "02:52",
+        "name": "Richard Wicentowski",
+        "time": "13:55",
+        "date": "2017-04-27",
+        "login": "richardw",
+        "pid": "13765",
+        "line": "pts/2"
+      }]
+    },
+    "oldbay*": {
+      "ERROR": "AUTHENTICATION ERROR"
+    },
+    "ldap*": {
+      "ERROR": "DOWN [Errno None] Unable to connect to port 22 on 130.58.68.2"
+    },
+    "garlic*": {
+      "ERROR": "AUTHENTICATION ERROR"
+    },
+    "ubuntu*": {
+      "ERROR": "AUTHENTICATION ERROR"
+    }
+  },
+  "hosts.mainlab": {
+    "cheese": {
+      "imcclea1": [{
+        "comment": "130.58.99.29",
+        "idle": "00:32",
+        "name": "Isabel McClean",
+        "time": "15:10",
+        "date": "2017-04-27",
+        "login": "imcclea1",
+        "pid": "920394",
+        "line": "pts/10"
+      }],
+      "tkyaw1": [{
+        "comment": ":20",
+        "idle": "old",
+        "name": "Theint Kyaw",
+        "time": "15:10",
+        "date": "2017-04-25",
+        "login": "tkyaw1",
+        "pid": "874635",
+        "line": "tty8"
+      }],
+      "rgarg2": [{
+        "comment": "130.58.96.152",
+        "idle": "00:25",
+        "name": "Riya Garg",
+        "time": "16:14",
+        "date": "2017-04-27",
+        "login": "rgarg2",
+        "pid": "922422",
+        "line": "pts/5"
+      }],
+      "cholmgr1": [{
+        "comment": ":0",
+        "idle": "old",
+        "name": "Christina Holmgren",
+        "time": "09:29",
+        "date": "2017-04-10",
+        "login": "cholmgr1",
+        "pid": "505934",
+        "line": "tty7"
+      }],
+      "jbaek1": [{
+        "comment": "130.58.101.146",
+        "idle": "01:19",
+        "name": "Jong Hyup",
+        "time": "11:30",
+        "date": "2017-04-27",
+        "login": "jbaek1",
+        "pid": "916316",
+        "line": "pts/2"
+      }],
+      "eremy1": [{
+        "comment": "tmux(726260).%0",
+        "idle": "old",
+        "name": "Emma Remy",
+        "time": "15:48",
+        "date": "2017-04-22",
+        "login": "eremy1",
+        "pid": "726260",
+        "line": "pts/3"
+      }, {
+        "comment": "tmux(726260).%1",
+        "idle": "old",
+        "name": "Emma Remy",
+        "time": "15:32",
+        "date": "2017-04-23",
+        "login": "eremy1",
+        "pid": "726260",
+        "line": "pts/7"
+      }, {
+        "comment": "tmux(726260).%2",
+        "idle": "old",
+        "name": "Emma Remy",
+        "time": "15:32",
+        "date": "2017-04-23",
+        "login": "eremy1",
+        "pid": "726260",
+        "line": "pts/8"
+      }],
+      "vdougli1": [{
+        "comment": ":21",
+        "idle": "old",
+        "name": "Veronica Douglin",
+        "time": "14:38",
+        "date": "2017-04-26",
+        "login": "vdougli1",
+        "pid": "894758",
+        "line": "tty9"
+      }]
+    },
+    "mugwort": {
+      "cchang2": [{
+        "comment": ":0",
+        "idle": "old",
+        "name": "Chi Yuan",
+        "time": "13:36",
+        "date": "2017-03-24",
+        "login": "cchang2",
+        "pid": "243410",
+        "line": "tty8"
+      }]
+    },
+    "bacon": {
+      "llwin1": [{
+        "comment": ":0",
+        "idle": "old",
+        "name": "Lu Lwin",
+        "time": "21:30",
+        "date": "2017-04-26",
+        "login": "llwin1",
+        "pid": "25606",
+        "line": "tty7"
+      }]
+    },
+    "sage": {},
+    "honey": {
+      "hhan3": [{
+        "comment": "130.58.97.14",
+        "idle": "00:39",
+        "name": "Henry Han",
+        "time": "09:28",
+        "date": "2017-04-27",
+        "login": "hhan3",
+        "pid": "716982",
+        "line": "pts/0"
+      }],
+      "aconant1": [{
+        "comment": "tmux(355699).%2",
+        "idle": "old",
+        "name": "Andrew Conant",
+        "time": "01:50",
+        "date": "2017-04-06",
+        "login": "aconant1",
+        "pid": "355699",
+        "line": "pts/1"
+      }, {
+        "comment": "tmux(355699).%1",
+        "idle": "old",
+        "name": "Andrew Conant",
+        "time": "02:36",
+        "date": "2017-04-02",
+        "login": "aconant1",
+        "pid": "355699",
+        "line": "pts/2"
+      }, {
+        "comment": "tmux(355699).%5",
+        "idle": "old",
+        "name": "Andrew Conant",
+        "time": "01:56",
+        "date": "2017-04-06",
+        "login": "aconant1",
+        "pid": "355699",
+        "line": "pts/4"
+      }, {
+        "comment": "tmux(355699).%7",
+        "idle": "old",
+        "name": "Andrew Conant",
+        "time": "02:03",
+        "date": "2017-04-06",
+        "login": "aconant1",
+        "pid": "355699",
+        "line": "pts/6"
+      }, {
+        "comment": "tmux(355699).%4",
+        "idle": "old",
+        "name": "Andrew Conant",
+        "time": "01:52",
+        "date": "2017-04-06",
+        "login": "aconant1",
+        "pid": "355699",
+        "line": "pts/3"
+      }, {
+        "comment": "tmux(355699).%9",
+        "idle": "old",
+        "name": "Andrew Conant",
+        "time": "02:55",
+        "date": "2017-04-20",
+        "login": "aconant1",
+        "pid": "355699",
+        "line": "pts/5"
+      }],
+      "dkondel1": [{
+        "comment": ":20",
+        "idle": "old",
+        "name": "Dimitri Kondelis",
+        "time": "15:53",
+        "date": "2017-04-27",
+        "login": "dkondel1",
+        "pid": "720993",
+        "line": "tty8"
+      }],
+      "njohns1": [{
+        "comment": ":0",
+        "idle": "old",
+        "name": "Nathaniel Johns",
+        "time": "12:32",
+        "date": "2017-04-19",
+        "login": "njohns1",
+        "pid": "598553",
+        "line": "tty7"
+      }]
+    },
+    "oregano": {
+      "azhao2": [{
+        "comment": ":20",
+        "idle": "old",
+        "name": "Annie Zhao",
+        "time": "14:48",
+        "date": "2017-04-20",
+        "login": "azhao2",
+        "pid": "593008",
+        "line": "tty8"
+      }],
+      "nhoang1": [{
+        "comment": ":0",
+        "idle": "old",
+        "name": "Nhung Hoang",
+        "time": "12:58",
+        "date": "2017-03-27",
+        "login": "nhoang1",
+        "pid": "260394",
+        "line": "tty7"
+      }]
+    },
+    "cream": {
+      "tcates1": [{
+        "comment": ":0",
+        "idle": "old",
+        "name": "Tristan Cates",
+        "time": "16:16",
+        "date": "2017-04-27",
+        "login": "tcates1",
+        "pid": "159423",
+        "line": "tty7"
+      }]
+    },
+    "caper": {
+      "csivilo1": [{
+        "comment": ":0",
+        "idle": "old",
+        "name": "Carlo Sivilotti",
+        "time": "19:01",
+        "date": "2017-04-26",
+        "login": "csivilo1",
+        "pid": "477128",
+        "line": "tty7"
+      }]
+    },
+    "spinach": {},
+    "basil": {},
+    "lime": {
+      "yzhang1": [{
+        "comment": ":0",
+        "idle": "old",
+        "name": "Yichen Zhang",
+        "time": "09:13",
+        "date": "2017-04-10",
+        "login": "yzhang1",
+        "pid": "472695",
+        "line": "tty10"
+      }],
+      "wchoi1": [{
+        "comment": ":20",
+        "idle": "old",
+        "name": "WonJoon Choi",
+        "time": "12:51",
+        "date": "2017-03-24",
+        "login": "wchoi1",
+        "pid": "168797",
+        "line": "tty9"
+      }]
+    },
+    "tomato": {
+      "eliu2": [{
+        "comment": ":0",
+        "idle": "old",
+        "name": "Ellen Liu",
+        "time": "14:07",
+        "date": "2017-04-14",
+        "login": "eliu2",
+        "pid": "311762",
+        "line": "tty7"
+      }]
+    },
+    "pepper": {},
+    "oil": {
+      "dchaike1": [{
+        "comment": "130.58.164.15",
+        "idle": "00:02",
+        "name": "Daniel Chaiken",
+        "time": "16:40",
+        "date": "2017-04-27",
+        "login": "dchaike1",
+        "pid": "780148",
+        "line": "pts/1"
+      }, {
+        "comment": "130.58.164.15",
+        "idle": "00:07",
+        "name": "Daniel Chaiken",
+        "time": "16:40",
+        "date": "2017-04-27",
+        "login": "dchaike1",
+        "pid": "780180",
+        "line": "pts/5"
+      }],
+      "cparker1": [{
+        "comment": "130.58.162.36",
+        "idle": "00:18",
+        "name": "Curtis Parker",
+        "time": "16:31",
+        "date": "2017-04-27",
+        "login": "cparker1",
+        "pid": "780023",
+        "line": "pts/0"
+      }],
+      "mhaque2": [{
+        "comment": "130.58.102.97",
+        "idle": "01:02",
+        "name": "Muhaiminul Haque",
+        "time": "14:58",
+        "date": "2017-04-27",
+        "login": "mhaque2",
+        "pid": "778942",
+        "line": "pts/3"
+      }],
+      "rgarg2": [{
+        "comment": ":0",
+        "idle": "old",
+        "name": "Riya Garg",
+        "time": "09:00",
+        "date": "2017-04-17",
+        "login": "rgarg2",
+        "pid": "531701",
+        "line": "tty7"
+      }],
+      "eremy1": [{
+        "comment": "tmux(543245).%0",
+        "idle": "old",
+        "name": "Emma Remy",
+        "time": "20:46",
+        "date": "2017-04-17",
+        "login": "eremy1",
+        "pid": "543245",
+        "line": "pts/2"
+      }, {
+        "comment": "tmux(543245).%1",
+        "idle": "old",
+        "name": "Emma Remy",
+        "time": "20:46",
+        "date": "2017-04-17",
+        "login": "eremy1",
+        "pid": "543245",
+        "line": "pts/4"
+      }]
+    },
+    "mustard": {
+      "kanders4": [{
+        "comment": ":20",
+        "idle": "old",
+        "name": "Katherine Anderson",
+        "time": "16:56",
+        "date": "2017-03-28",
+        "login": "kanders4",
+        "pid": "284317",
+        "line": "tty9"
+      }]
+    },
+    "mushroom": {
+      "jtaylor5": [{
+        "comment": ":0",
+        "idle": "old",
+        "name": "Jonah Taylor-McGregor",
+        "time": "13:00",
+        "date": "2017-04-27",
+        "login": "jtaylor5",
+        "pid": "357943",
+        "line": "tty7"
+      }]
+    },
+    "flour": {
+      "hhughes1": [{
+        "comment": ":0",
+        "idle": "old",
+        "name": "Hunter Hughes",
+        "time": "14:54",
+        "date": "2017-04-27",
+        "login": "hhughes1",
+        "pid": "704139",
+        "line": "tty7"
+      }]
+    },
+    "cornstarch": {
+      "mriley1": [{
+        "comment": ":0",
+        "idle": "old",
+        "name": "Maddox Riley",
+        "time": "16:52",
+        "date": "2017-04-25",
+        "login": "mriley1",
+        "pid": "305292",
+        "line": "tty7"
+      }]
+    },
+    "mace": {
+      "mdavinr1": [{
+        "comment": ":0",
+        "idle": "old",
+        "name": "Michael Davinroy",
+        "time": "13:38",
+        "date": "2017-04-27",
+        "login": "mdavinr1",
+        "pid": "730848",
+        "line": "tty7"
+      }]
+    },
+    "cabbage": {
+      "scheung1": [{
+        "comment": ":0",
+        "idle": "old",
+        "name": "Shirley Cheung",
+        "time": "12:52",
+        "date": "2017-04-24",
+        "login": "scheung1",
+        "pid": "632616",
+        "line": "tty7"
+      }]
+    },
+    "coriander": {},
+    "thyme": {},
+    "onion": {
+      "dchaike1": [{
+        "comment": ":0",
+        "idle": "old",
+        "name": "Daniel Chaiken",
+        "time": "16:36",
+        "date": "2017-04-27",
+        "login": "dchaike1",
+        "pid": "691453",
+        "line": "tty7"
+      }]
+    },
+    "catnip": {
+      "jpark3": [{
+        "comment": "130.58.166.81",
+        "idle": "00:47",
+        "name": "Joon Sung",
+        "time": "12:37",
+        "date": "2017-04-27",
+        "login": "jpark3",
+        "pid": "539794",
+        "line": "pts/0"
+      }],
+      "wlee1": [{
+        "comment": "130.58.167.243",
+        "idle": "03:17",
+        "name": "William Lee",
+        "time": "13:32",
+        "date": "2017-04-27",
+        "login": "wlee1",
+        "pid": "540457",
+        "line": "pts/7"
+      }],
+      "lpacker1": [{
+        "comment": "130.58.237.171",
+        "idle": "00:57",
+        "name": "Liam Packer",
+        "time": "15:51",
+        "date": "2017-04-27",
+        "login": "lpacker1",
+        "pid": "542231",
+        "line": "pts/9"
+      }],
+      "cstone2": [{
+        "comment": "130.58.161.167",
+        "idle": "00:56",
+        "name": "Cassandra Stone",
+        "time": "15:52",
+        "date": "2017-04-27",
+        "login": "cstone2",
+        "pid": "542332",
+        "line": "pts/10"
+      }],
+      "newhall": [{
+        "comment": "130.58.106.233",
+        "idle": "00:43",
+        "name": "Tia Newhall",
+        "time": "16:06",
+        "date": "2017-04-27",
+        "login": "newhall",
+        "pid": "542512",
+        "line": "pts/11"
+      }],
+      "tyu2": [{
+        "comment": "130.58.97.52",
+        "idle": "01:59",
+        "name": "Yan Ting",
+        "time": "14:23",
+        "date": "2017-04-27",
+        "login": "tyu2",
+        "pid": "540976",
+        "line": "pts/8"
+      }],
+      "eremy1": [{
+        "comment": "tmux(97298).%8",
+        "idle": "23:25",
+        "name": "Emma Remy",
+        "time": "17:05",
+        "date": "2017-04-26",
+        "login": "eremy1",
+        "pid": "97298",
+        "line": "pts/1"
+      }, {
+        "comment": "tmux(97298).%6",
+        "idle": "old",
+        "name": "Emma Remy",
+        "time": "13:29",
+        "date": "2017-04-12",
+        "login": "eremy1",
+        "pid": "97298",
+        "line": "pts/2"
+      }, {
+        "comment": "tmux(97298).%7",
+        "idle": "old",
+        "name": "Emma Remy",
+        "time": "13:29",
+        "date": "2017-04-12",
+        "login": "eremy1",
+        "pid": "97298",
+        "line": "pts/3"
+      }, {
+        "comment": "tmux(97298).%0",
+        "idle": "old",
+        "name": "Emma Remy",
+        "time": "16:45",
+        "date": "2017-04-03",
+        "login": "eremy1",
+        "pid": "97298",
+        "line": "pts/4"
+      }, {
+        "comment": "tmux(97298).%1",
+        "idle": "old",
+        "name": "Emma Remy",
+        "time": "16:45",
+        "date": "2017-04-03",
+        "login": "eremy1",
+        "pid": "97298",
+        "line": "pts/5"
+      }, {
+        "comment": "tmux(97298).%9",
+        "idle": "23:18",
+        "name": "Emma Remy",
+        "time": "17:05",
+        "date": "2017-04-26",
+        "login": "eremy1",
+        "pid": "97298",
+        "line": "pts/6"
+      }]
+    },
+    "nutmeg": {
+      "dbidiko1": [{
+        "comment": ":20",
+        "idle": "old",
+        "name": "Daniel Bidikov",
+        "time": "14:38",
+        "date": "2017-04-27",
+        "login": "dbidiko1",
+        "pid": "700232",
+        "line": "tty8"
+      }],
+      "asiegel1": [{
+        "comment": ":0",
+        "idle": "old",
+        "name": "Alexander Siegel",
+        "time": "19:39",
+        "date": "2017-03-19",
+        "login": "asiegel1",
+        "pid": "147224",
+        "line": "tty7"
+      }]
+    },
+    "butter": {
+      "nkhoros1": [{
+        "comment": "130.58.165.132",
+        "idle": "00:56",
+        "name": "Nicole Khorosh",
+        "time": "11:15",
+        "date": "2017-04-27",
+        "login": "nkhoros1",
+        "pid": "485304",
+        "line": "pts/0"
+      }],
+      "eremy1": [{
+        "comment": "tmux(94852).%3",
+        "idle": "old",
+        "name": "Emma Remy",
+        "time": "10:10",
+        "date": "2017-04-26",
+        "login": "eremy1",
+        "pid": "94852",
+        "line": "pts/4"
+      }, {
+        "comment": "tmux(94852).%0",
+        "idle": "old",
+        "name": "Emma Remy",
+        "time": "15:01",
+        "date": "2017-04-10",
+        "login": "eremy1",
+        "pid": "94852",
+        "line": "pts/1"
+      }, {
+        "comment": "tmux(94852).%1",
+        "idle": "old",
+        "name": "Emma Remy",
+        "time": "15:01",
+        "date": "2017-04-10",
+        "login": "eremy1",
+        "pid": "94852",
+        "line": "pts/2"
+      }, {
+        "comment": "tmux(94852).%2",
+        "idle": "old",
+        "name": "Emma Remy",
+        "time": "10:10",
+        "date": "2017-04-26",
+        "login": "eremy1",
+        "pid": "94852",
+        "line": "pts/3"
+      }]
+    },
+    "poppy": {
+      "dzucker1": [{
+        "comment": ":21",
+        "idle": "old",
+        "name": "David Zuckerman",
+        "time": "18:28",
+        "date": "2017-04-19",
+        "login": "dzucker1",
+        "pid": "690280",
+        "line": "tty9"
+      }],
+      "lbrumga1": [{
+        "comment": ":0",
+        "idle": "old",
+        "name": "Leah Brumgard",
+        "time": "13:09",
+        "date": "2017-03-24",
+        "login": "lbrumga1",
+        "pid": "241180",
+        "line": "tty7"
+      }]
+    },
+    "rosemary": {
+      "aconant1": [{
+        "comment": "tmux(219757).%0",
+        "idle": "old",
+        "name": "Andrew Conant",
+        "time": "10:59",
+        "date": "2017-03-18",
+        "login": "aconant1",
+        "pid": "219757",
+        "line": "pts/2"
+      }, {
+        "comment": "tmux(219757).%2",
+        "idle": "old",
+        "name": "Andrew Conant",
+        "time": "11:28",
+        "date": "2017-03-18",
+        "login": "aconant1",
+        "pid": "219757",
+        "line": "pts/5"
+      }, {
+        "comment": "tmux(219757).%3",
+        "idle": "old",
+        "name": "Andrew Conant",
+        "time": "11:29",
+        "date": "2017-03-18",
+        "login": "aconant1",
+        "pid": "219757",
+        "line": "pts/6"
+      }, {
+        "comment": "tmux(219757).%4",
+        "idle": "old",
+        "name": "Andrew Conant",
+        "time": "11:28",
+        "date": "2017-03-26",
+        "login": "aconant1",
+        "pid": "219757",
+        "line": "pts/10"
+      }, {
+        "comment": "tmux(219757).%9",
+        "idle": "old",
+        "name": "Andrew Conant",
+        "time": "13:06",
+        "date": "2017-03-26",
+        "login": "aconant1",
+        "pid": "219757",
+        "line": "pts/12"
+      }, {
+        "comment": "tmux(219757).%18",
+        "idle": "old",
+        "name": "Andrew Conant",
+        "time": "14:05",
+        "date": "2017-04-04",
+        "login": "aconant1",
+        "pid": "219757",
+        "line": "pts/13"
+      }, {
+        "comment": "tmux(219757).%15",
+        "idle": "old",
+        "name": "Andrew Conant",
+        "time": "14:40",
+        "date": "2017-03-26",
+        "login": "aconant1",
+        "pid": "219757",
+        "line": "pts/14"
+      }, {
+        "comment": "tmux(219757).%20",
+        "idle": "old",
+        "name": "Andrew Conant",
+        "time": "11:02",
+        "date": "2017-04-22",
+        "login": "aconant1",
+        "pid": "219757",
+        "line": "pts/18"
+      }],
+      "kpasill1": [{
+        "comment": ":20",
+        "idle": "old",
+        "name": "Kaitelyn Pasillas",
+        "time": "09:58",
+        "date": "2017-03-20",
+        "login": "kpasill1",
+        "pid": "259302",
+        "line": "tty8"
+      }],
+      "yhigash1": [{
+        "comment": ":0",
+        "idle": "old",
+        "name": "Yosuke Higashi",
+        "time": "14:41",
+        "date": "2017-03-12",
+        "login": "yhigash1",
+        "pid": "70612",
+        "line": "tty7"
+      }],
+      "eremy1": [{
+        "comment": "tmux(85671).%0",
+        "idle": "old",
+        "name": "Emma Remy",
+        "time": "14:52",
+        "date": "2017-03-13",
+        "login": "eremy1",
+        "pid": "85671",
+        "line": "pts/3"
+      }, {
+        "comment": "tmux(85671).%1",
+        "idle": "old",
+        "name": "Emma Remy",
+        "time": "14:52",
+        "date": "2017-03-13",
+        "login": "eremy1",
+        "pid": "85671",
+        "line": "pts/4"
+      }, {
+        "comment": "tmux(85671).%11",
+        "idle": "old",
+        "name": "Emma Remy",
+        "time": "10:38",
+        "date": "2017-04-11",
+        "login": "eremy1",
+        "pid": "85671",
+        "line": "pts/7"
+      }, {
+        "comment": "tmux(85671).%12",
+        "idle": "old",
+        "name": "Emma Remy",
+        "time": "10:38",
+        "date": "2017-04-11",
+        "login": "eremy1",
+        "pid": "85671",
+        "line": "pts/8"
+      }, {
+        "comment": "tmux(85671).%7",
+        "idle": "old",
+        "name": "Emma Remy",
+        "time": "17:20",
+        "date": "2017-04-02",
+        "login": "eremy1",
+        "pid": "85671",
+        "line": "pts/9"
+      }, {
+        "comment": "tmux(85671).%8",
+        "idle": "old",
+        "name": "Emma Remy",
+        "time": "17:20",
+        "date": "2017-04-02",
+        "login": "eremy1",
+        "pid": "85671",
+        "line": "pts/11"
+      }, {
+        "comment": "tmux(85671).%13",
+        "idle": "old",
+        "name": "Emma Remy",
+        "time": "13:15",
+        "date": "2017-04-16",
+        "login": "eremy1",
+        "pid": "85671",
+        "line": "pts/16"
+      }, {
+        "comment": "tmux(85671).%14",
+        "idle": "old",
+        "name": "Emma Remy",
+        "time": "13:15",
+        "date": "2017-04-16",
+        "login": "eremy1",
+        "pid": "85671",
+        "line": "pts/17"
+      }]
+    },
+    "turmeric": {
+      "jjohnst2": [{
+        "comment": ":20",
+        "idle": "old",
+        "name": "John Griffin",
+        "time": "13:49",
+        "date": "2017-04-18",
+        "login": "jjohnst2",
+        "pid": "555332",
+        "line": "tty8"
+      }],
+      "gmenz1": [{
+        "comment": ":0",
+        "idle": "old",
+        "name": "George Menz",
+        "time": "15:29",
+        "date": "2017-03-13",
+        "login": "gmenz1",
+        "pid": "68693",
+        "line": "tty7"
+      }]
+    }
+  },
+  "hosts.os_nlp": {
+    "zucchini": {}
+  },
+  "hosts.serverroom": {
+    "vanilla": {
+      "mauskop": [{
+        "comment": "130.58.104.169",
+        "idle": "01:09",
+        "name": "David Mauskop",
+        "time": "15:34",
+        "date": "2017-04-27",
+        "login": "mauskop",
+        "pid": "26482",
+        "line": "pts/0"
+      }],
+      "newhall": [{
+        "comment": "130.58.106.233",
+        "idle": ".",
+        "name": "Tia Newhall",
+        "time": "16:06",
+        "date": "2017-04-27",
+        "login": "newhall",
+        "pid": "26964",
+        "line": "pts/1"
+      }]
+    },
+    "almond": {},
+    "avocado": {
+      "jsegert1": [{
+        "comment": "130:S.0",
+        "idle": "old",
+        "name": "Julian Segert",
+        "time": "19:48",
+        "date": "2017-04-22",
+        "login": "jsegert1",
+        "pid": "29599",
+        "line": "pts/2"
+      }]
+    },
+    "celery": {},
+    "kronos": {
+      "tnguyen4": [{
+        "comment": "tamarind.cs.swarthmore.edu",
+        "idle": "old",
+        "name": "Tuan Nguyen",
+        "time": "11:56",
+        "date": "2017-04-22",
+        "login": "tnguyen4",
+        "pid": "17555",
+        "line": "pts/2"
+      }, {
+        "comment": "tamarind.cs.swarthmore.edu",
+        "idle": "old",
+        "name": "Tuan Nguyen",
+        "time": "13:02",
+        "date": "2017-04-22",
+        "login": "tnguyen4",
+        "pid": "18295",
+        "line": "pts/5"
+      }]
+    },
+    "milk": {}
+  },
+  "hosts.bookstore": {
+    "psyduck": {
+      "csivilo1": [{
+        "comment": ":23",
+        "idle": "old",
+        "name": "Carlo Sivilotti",
+        "time": "11:16",
+        "date": "2017-04-23",
+        "login": "csivilo1",
+        "pid": "4467",
+        "line": "tty13"
+      }],
+      "grubins1": [{
+        "comment": ":22",
+        "idle": "old",
+        "name": "Gabrielle Rubinstein",
+        "time": "20:13",
+        "date": "2017-04-19",
+        "login": "grubins1",
+        "pid": "21161",
+        "line": "tty11"
+      }],
+      "mgutier1": [{
+        "comment": ":20",
+        "idle": "old",
+        "name": "Miguel Gutierrez",
+        "time": "23:10",
+        "date": "2017-04-10",
+        "login": "mgutier1",
+        "pid": "2516",
+        "line": "tty9"
+      }],
+      "zlin2": [{
+        "comment": ":0",
+        "idle": "old",
+        "name": "Zijin Lin",
+        "time": "14:59",
+        "date": "2017-04-10",
+        "login": "zlin2",
+        "pid": "18497",
+        "line": "tty8"
+      }],
+      "mbredes1": [{
+        "comment": ":21",
+        "idle": "old",
+        "name": "Marissa Bredesen",
+        "time": "11:42",
+        "date": "2017-04-16",
+        "login": "mbredes1",
+        "pid": "9248",
+        "line": "tty10"
+      }]
+    },
+    "ekans": {
+      "kwang2": [{
+        "comment": ":0",
+        "idle": "old",
+        "name": "Ke Wang",
+        "time": "14:54",
+        "date": "2017-04-24",
+        "login": "kwang2",
+        "pid": "22272",
+        "line": "tty7"
+      }],
+      "qfreedm1": [{
+        "comment": ":20",
+        "idle": "old",
+        "name": "Quinn Freedman",
+        "time": "13:09",
+        "date": "2017-04-27",
+        "login": "qfreedm1",
+        "pid": "23009",
+        "line": "tty8"
+      }]
+    },
+    "staryu": {
+      "amansar1": [{
+        "comment": ":0",
+        "idle": "old",
+        "name": "Abdul Mansaray",
+        "time": "15:10",
+        "date": "2017-04-25",
+        "login": "amansar1",
+        "pid": "24724",
+        "line": "tty8"
+      }]
+    },
+    "zubat": {
+      "ebarran1": [{
+        "comment": ":21",
+        "idle": "old",
+        "name": "Emily Barranca",
+        "time": "18:41",
+        "date": "2017-04-04",
+        "login": "ebarran1",
+        "pid": "6357",
+        "line": "tty9"
+      }],
+      "tcates1": [{
+        "comment": ":0",
+        "idle": "old",
+        "name": "Tristan Cates",
+        "time": "21:03",
+        "date": "2017-04-22",
+        "login": "tcates1",
+        "pid": "32119",
+        "line": "tty10"
+      }],
+      "lceball1": [{
+        "comment": ":20",
+        "idle": "old",
+        "name": "Luis Ceballos",
+        "time": "19:42",
+        "date": "2017-04-02",
+        "login": "lceball1",
+        "pid": "2476",
+        "line": "tty8"
+      }]
+    },
+    "seel": {
+      "jfreier1": [{
+        "comment": ":0",
+        "idle": "old",
+        "name": "Joshua Freier",
+        "time": "13:21",
+        "date": "2017-04-26",
+        "login": "jfreier1",
+        "pid": "24606",
+        "line": "tty7"
+      }]
+    },
+    "oddish": {
+      "adangol1": [{
+        "comment": ":20",
+        "idle": "old",
+        "name": "Aayushi Dangol",
+        "time": "13:17",
+        "date": "2017-04-05",
+        "login": "adangol1",
+        "pid": "17157",
+        "line": "tty8"
+      }],
+      "afatehp1": [{
+        "comment": ":0",
+        "idle": "old",
+        "name": "Avni Fatehpuria",
+        "time": "15:10",
+        "date": "2017-04-27",
+        "login": "afatehp1",
+        "pid": "26348",
+        "line": "tty9"
+      }]
+    },
+    "bulbasaur": {},
+    "jigglypuff": {
+      "xzhang2": [{
+        "comment": ":20",
+        "idle": "old",
+        "name": "Xihan Zhang",
+        "time": "19:19",
+        "date": "2017-04-23",
+        "login": "xzhang2",
+        "pid": "5465",
+        "line": "tty8"
+      }],
+      "lngoquy1": [{
+        "comment": ":21",
+        "idle": "old",
+        "name": "Lan Anh",
+        "time": "14:58",
+        "date": "2017-04-24",
+        "login": "lngoquy1",
+        "pid": "20232",
+        "line": "tty9"
+      }],
+      "jjin3": [{
+        "comment": ":0",
+        "idle": "old",
+        "name": "Jason Jin",
+        "time": "14:00",
+        "date": "2017-04-19",
+        "login": "jjin3",
+        "pid": "27918",
+        "line": "tty7"
+      }]
+    },
+    "growlithe": {
+      "hhan3": [{
+        "comment": ":0",
+        "idle": "old",
+        "name": "Henry Han",
+        "time": "09:59",
+        "date": "2017-04-26",
+        "login": "hhan3",
+        "pid": "23483",
+        "line": "tty7"
+      }],
+      "kanders4": [{
+        "comment": ":21",
+        "idle": "old",
+        "name": "Katherine Anderson",
+        "time": "14:58",
+        "date": "2017-04-12",
+        "login": "kanders4",
+        "pid": "8328",
+        "line": "tty9"
+      }]
+    },
+    "abra": {},
+    "beedrill": {
+      "tkyaw1": [{
+        "comment": ":0",
+        "idle": "old",
+        "name": "Theint Kyaw",
+        "time": "18:33",
+        "date": "2017-04-02",
+        "login": "tkyaw1",
+        "pid": "19455",
+        "line": "tty7"
+      }]
+    },
+    "snorlax": {
+      "dzucker1": [{
+        "comment": ":0",
+        "idle": "old",
+        "name": "David Zuckerman",
+        "time": "14:49",
+        "date": "2017-03-31",
+        "login": "dzucker1",
+        "pid": "2720",
+        "line": "tty8"
+      }],
+      "cpillsb1": [{
+        "comment": ":20",
+        "idle": "old",
+        "name": "Colin Pillsbury",
+        "time": "14:41",
+        "date": "2017-04-04",
+        "login": "cpillsb1",
+        "pid": "5608",
+        "line": "tty9"
+      }]
+    },
+    "ponyta": {
+      "mpiazza1": [{
+        "comment": ":0",
+        "idle": "old",
+        "name": "Michael Piazza",
+        "time": "16:33",
+        "date": "2017-04-12",
+        "login": "mpiazza1",
+        "pid": "9956",
+        "line": "tty7"
+      }],
+      "gquarte1": [{
+        "comment": ":20",
+        "idle": "old",
+        "name": "Gabriel Quartey",
+        "time": "15:05",
+        "date": "2017-04-27",
+        "login": "gquarte1",
+        "pid": "11265",
+        "line": "tty8"
+      }],
+      "eremy1": [{
+        "comment": "tmux(18532).%0",
+        "idle": "old",
+        "name": "Emma Remy",
+        "time": "16:15",
+        "date": "2017-04-24",
+        "login": "eremy1",
+        "pid": "18532",
+        "line": "pts/2"
+      }]
+    },
+    "pikachu": {
+      "aconant1": [{
+        "comment": "tmux(17258).%3",
+        "idle": "old",
+        "name": "Andrew Conant",
+        "time": "16:23",
+        "date": "2017-04-17",
+        "login": "aconant1",
+        "pid": "17258",
+        "line": "pts/0"
+      }, {
+        "comment": "tmux(17258).%0",
+        "idle": "old",
+        "name": "Andrew Conant",
+        "time": "14:58",
+        "date": "2017-04-17",
+        "login": "aconant1",
+        "pid": "17258",
+        "line": "pts/2"
+      }, {
+        "comment": "tmux(17258).%4",
+        "idle": "old",
+        "name": "Andrew Conant",
+        "time": "16:39",
+        "date": "2017-04-17",
+        "login": "aconant1",
+        "pid": "17258",
+        "line": "pts/3"
+      }],
+      "swang5": [{
+        "comment": ":0",
+        "idle": "old",
+        "name": "Shiqin Wang",
+        "time": "13:01",
+        "date": "2017-04-27",
+        "login": "swang5",
+        "pid": "25206",
+        "line": "tty8"
+      }]
+    },
+    "butterfree": {
+      "lliao1": [{
+        "comment": ":20",
+        "idle": "old",
+        "name": "Lesia Liao",
+        "time": "15:02",
+        "date": "2017-04-26",
+        "login": "lliao1",
+        "pid": "23356",
+        "line": "tty8"
+      }],
+      "qfreedm1": [{
+        "comment": ":0",
+        "idle": "old",
+        "name": "Quinn Freedman",
+        "time": "18:43",
+        "date": "2017-04-15",
+        "login": "qfreedm1",
+        "pid": "1791",
+        "line": "tty7"
+      }]
+    },
+    "gastly": {
+      "amansar1": [{
+        "comment": ":21",
+        "idle": "old",
+        "name": "Abdul Mansaray",
+        "time": "13:07",
+        "date": "2017-04-13",
+        "login": "amansar1",
+        "pid": "20038",
+        "line": "tty10"
+      }],
+      "dgeschw1": [{
+        "comment": ":22",
+        "idle": "old",
+        "name": "David Geschwind",
+        "time": "20:08",
+        "date": "2017-04-18",
+        "login": "dgeschw1",
+        "pid": "10238",
+        "line": "tty11"
+      }],
+      "zlin2": [{
+        "comment": ":23",
+        "idle": "old",
+        "name": "Zijin Lin",
+        "time": "15:04",
+        "date": "2017-04-24",
+        "login": "zlin2",
+        "pid": "6227",
+        "line": "tty13"
+      }],
+      "yhigash1": [{
+        "comment": ":20",
+        "idle": "old",
+        "name": "Yosuke Higashi",
+        "time": "13:10",
+        "date": "2017-04-11",
+        "login": "yhigash1",
+        "pid": "25723",
+        "line": "tty9"
+      }],
+      "dboshko1": [{
+        "comment": ":0",
+        "idle": "old",
+        "name": "Douglass Boshkoff",
+        "time": "18:58",
+        "date": "2017-04-03",
+        "login": "dboshko1",
+        "pid": "17190",
+        "line": "tty8"
+      }]
+    },
+    "eevee": {
+      "aconant1": [{
+        "comment": "tmux(27994).%0",
+        "idle": "old",
+        "name": "Andrew Conant",
+        "time": "13:35",
+        "date": "2017-04-01",
+        "login": "aconant1",
+        "pid": "27994",
+        "line": "pts/1"
+      }, {
+        "comment": "tmux(27994).%3",
+        "idle": "old",
+        "name": "Andrew Conant",
+        "time": "14:08",
+        "date": "2017-04-01",
+        "login": "aconant1",
+        "pid": "27994",
+        "line": "pts/2"
+      }, {
+        "comment": "tmux(27994).%7",
+        "idle": "old",
+        "name": "Andrew Conant",
+        "time": "16:10",
+        "date": "2017-04-01",
+        "login": "aconant1",
+        "pid": "27994",
+        "line": "pts/3"
+      }],
+      "gkawaki1": [{
+        "comment": ":0",
+        "idle": "old",
+        "name": "Genji Kawakita",
+        "time": "14:42",
+        "date": "2017-04-27",
+        "login": "gkawaki1",
+        "pid": "20939",
+        "line": "tty7"
+      }],
+      "zzhao1": [{
+        "comment": ":21",
+        "idle": "old",
+        "name": "Zhuolun Zhao",
+        "time": "11:35",
+        "date": "2017-04-18",
+        "login": "zzhao1",
+        "pid": "25874",
+        "line": "tty9"
+      }]
+    },
+    "slowpoke": {},
+    "diglett": {
+      "tcates1": [{
+        "comment": ":0",
+        "idle": "old",
+        "name": "Tristan Cates",
+        "time": "17:55",
+        "date": "2017-04-20",
+        "login": "tcates1",
+        "pid": "2242",
+        "line": "tty7"
+      }]
+    },
+    "horsea": {
+      "ashmoys1": [{
+        "comment": ":20",
+        "idle": "old",
+        "name": "Amy Shmoys",
+        "time": "13:09",
+        "date": "2017-04-27",
+        "login": "ashmoys1",
+        "pid": "8530",
+        "line": "tty9"
+      }],
+      "zlin2": [{
+        "comment": ":21",
+        "idle": "old",
+        "name": "Zijin Lin",
+        "time": "15:19",
+        "date": "2017-04-27",
+        "login": "zlin2",
+        "pid": "10482",
+        "line": "tty10"
+      }],
+      "gquarte1": [{
+        "comment": ":0",
+        "idle": "old",
+        "name": "Gabriel Quartey",
+        "time": "19:15",
+        "date": "2017-04-26",
+        "login": "gquarte1",
+        "pid": "28664",
+        "line": "tty7"
+      }]
+    },
+    "crabby": {},
+    "pidgey": {
+      "aconant1": [{
+        "comment": ":20",
+        "idle": "old",
+        "name": "Andrew Conant",
+        "time": "15:34",
+        "date": "2017-04-24",
+        "login": "aconant1",
+        "pid": "21560",
+        "line": "tty8"
+      }, {
+        "comment": "130.58.68.113",
+        "idle": "old",
+        "name": "Andrew Conant",
+        "time": "15:05",
+        "date": "2017-04-24",
+        "login": "aconant1",
+        "pid": "18485",
+        "line": "pts/2"
+      }, {
+        "comment": "tmux(19152).%0",
+        "idle": "old",
+        "name": "Andrew Conant",
+        "time": "15:13",
+        "date": "2017-04-24",
+        "login": "aconant1",
+        "pid": "19152",
+        "line": "pts/3"
+      }, {
+        "comment": "tmux(19152).%1",
+        "idle": "old",
+        "name": "Andrew Conant",
+        "time": "15:13",
+        "date": "2017-04-24",
+        "login": "aconant1",
+        "pid": "19152",
+        "line": "pts/4"
+      }],
+      "gquarte1": [{
+        "comment": ":0",
+        "idle": "old",
+        "name": "Gabriel Quartey",
+        "time": "22:58",
+        "date": "2017-04-23",
+        "login": "gquarte1",
+        "pid": "3866",
+        "line": "tty7"
+      }],
+      "dmartsc1": [{
+        "comment": ":21",
+        "idle": "old",
+        "name": "Diana Martschenko",
+        "time": "12:36",
+        "date": "2017-04-27",
+        "login": "dmartsc1",
+        "pid": "17786",
+        "line": "tty9"
+      }]
+    },
+    "geodude": {
+      "trahman1": [{
+        "comment": "tmux(18273).%1",
+        "idle": "old",
+        "name": "Tahmid Rahman",
+        "time": "15:15",
+        "date": "2017-04-24",
+        "login": "trahman1",
+        "pid": "18273",
+        "line": "pts/2"
+      }]
+    },
+    "rattata": {
+      "mchalif1": [{
+        "comment": ":0",
+        "idle": "old",
+        "name": "Matthieu Chalifour",
+        "time": "15:33",
+        "date": "2017-04-21",
+        "login": "mchalif1",
+        "pid": "20837",
+        "line": "tty8"
+      }]
+    },
+    "ditto": {
+      "kpasill1": [{
+        "comment": ":20",
+        "idle": "old",
+        "name": "Kaitelyn Pasillas",
+        "time": "16:09",
+        "date": "2017-04-21",
+        "login": "kpasill1",
+        "pid": "4639",
+        "line": "tty8"
+      }],
+      "jsegert1": [{
+        "comment": ":0",
+        "idle": "old",
+        "name": "Julian Segert",
+        "time": "14:57",
+        "date": "2017-04-03",
+        "login": "jsegert1",
+        "pid": "13271",
+        "line": "tty7"
+      }]
+    },
+    "squirtle": {
+      "amansar1": [{
+        "comment": ":0",
+        "idle": "old",
+        "name": "Abdul Mansaray",
+        "time": "14:37",
+        "date": "2017-04-04",
+        "login": "amansar1",
+        "pid": "30540",
+        "line": "tty7"
+      }],
+      "cholmgr1": [{
+        "comment": ":20",
+        "idle": "old",
+        "name": "Christina Holmgren",
+        "time": "18:28",
+        "date": "2017-04-18",
+        "login": "cholmgr1",
+        "pid": "15268",
+        "line": "tty9"
+      }]
+    },
+    "koffing": {
+      "fyang1": [{
+        "comment": ":20",
+        "idle": "old",
+        "name": "Fengjun Yang",
+        "time": "15:04",
+        "date": "2017-04-27",
+        "login": "fyang1",
+        "pid": "12084",
+        "line": "tty8"
+      }, {
+        "comment": ":20.0",
+        "idle": "00:02",
+        "name": "Fengjun Yang",
+        "time": "16:26",
+        "date": "2017-04-27",
+        "login": "fyang1",
+        "pid": "15758",
+        "line": "pts/1"
+      }],
+      "grubins1": [{
+        "comment": ":0",
+        "idle": "old",
+        "name": "Gabrielle Rubinstein",
+        "time": "19:36",
+        "date": "2017-04-25",
+        "login": "grubins1",
+        "pid": "22097",
+        "line": "tty7"
+      }]
+    },
+    "mew": {
+      "fyang1": [{
+        "comment": ":0",
+        "idle": "old",
+        "name": "Fengjun Yang",
+        "time": "15:52",
+        "date": "2017-04-15",
+        "login": "fyang1",
+        "pid": "30431",
+        "line": "tty7"
+      }, {
+        "comment": ":0.0",
+        "idle": "old",
+        "name": "Fengjun Yang",
+        "time": "16:06",
+        "date": "2017-04-15",
+        "login": "fyang1",
+        "pid": "30717",
+        "line": "pts/0"
+      }],
+      "mgagne1": [{
+        "comment": ":20",
+        "idle": "old",
+        "name": "Martin Gagne",
+        "time": "09:45",
+        "date": "2017-04-26",
+        "login": "mgagne1",
+        "pid": "25537",
+        "line": "tty8"
+      }]
+    },
+    "charmander": {
+      "msong2": [{
+        "comment": ":20",
+        "idle": "old",
+        "name": "Michael Song",
+        "time": "15:04",
+        "date": "2017-04-09",
+        "login": "msong2",
+        "pid": "876",
+        "line": "tty9"
+      }],
+      "mbredes1": [{
+        "comment": ":0",
+        "idle": "old",
+        "name": "Marissa Bredesen",
+        "time": "11:57",
+        "date": "2017-04-08",
+        "login": "mbredes1",
+        "pid": "11785",
+        "line": "tty8"
+      }]
+    },
+    "poliwag": {
+      "aabitin1": [{
+        "comment": ":20",
+        "idle": "old",
+        "name": "Angelina Abitino",
+        "time": "23:54",
+        "date": "2017-04-10",
+        "login": "aabitin1",
+        "pid": "23034",
+        "line": "tty8"
+      }]
+    },
+    "mankey": {
+      "llwin1": [{
+        "comment": ":21",
+        "idle": "old",
+        "name": "Lu Lwin",
+        "time": "16:10",
+        "date": "2017-04-19",
+        "login": "llwin1",
+        "pid": "4876",
+        "line": "tty9"
+      }],
+      "cpillsb1": [{
+        "comment": ":20",
+        "idle": "old",
+        "name": "Colin Pillsbury",
+        "time": "20:26",
+        "date": "2017-04-15",
+        "login": "cpillsb1",
+        "pid": "4841",
+        "line": "tty8"
+      }],
+      "zlin2": [{
+        "comment": ":0",
+        "idle": "old",
+        "name": "Zijin Lin",
+        "time": "14:53",
+        "date": "2017-04-06",
+        "login": "zlin2",
+        "pid": "13616",
+        "line": "tty7"
+      }]
+    },
+    "dratini": {
+      "hhuang2": [{
+        "comment": ":0",
+        "idle": "old",
+        "name": "Han Huang",
+        "time": "14:44",
+        "date": "2017-04-27",
+        "login": "hhuang2",
+        "pid": "21972",
+        "line": "tty7"
+      }]
+    },
+    "onix": {
+      "cvik1": [{
+        "comment": ":0",
+        "idle": "old",
+        "name": "Christian Vik",
+        "time": "09:48",
+        "date": "2017-04-26",
+        "login": "cvik1",
+        "pid": "30490",
+        "line": "tty7"
+      }],
+      "aconant1": [{
+        "comment": "tmux(26310).%0",
+        "idle": "old",
+        "name": "Andrew Conant",
+        "time": "15:04",
+        "date": "2017-04-24",
+        "login": "aconant1",
+        "pid": "26310",
+        "line": "pts/2"
+      }, {
+        "comment": "tmux(26310).%1",
+        "idle": "old",
+        "name": "Andrew Conant",
+        "time": "15:04",
+        "date": "2017-04-24",
+        "login": "aconant1",
+        "pid": "26310",
+        "line": "pts/3"
+      }],
+      "dzucker1": [{
+        "comment": ":20",
+        "idle": "old",
+        "name": "David Zuckerman",
+        "time": "15:10",
+        "date": "2017-04-27",
+        "login": "dzucker1",
+        "pid": "28817",
+        "line": "tty8"
+      }]
+    },
+    "clefairy": {
+      "yzhang1": [{
+        "comment": ":21",
+        "idle": "old",
+        "name": "Yichen Zhang",
+        "time": "18:37",
+        "date": "2017-04-09",
+        "login": "yzhang1",
+        "pid": "31597",
+        "line": "tty9"
+      }],
+      "qfreedm1": [{
+        "comment": ":0",
+        "idle": "old",
+        "name": "Quinn Freedman",
+        "time": "11:37",
+        "date": "2017-04-08",
+        "login": "qfreedm1",
+        "pid": "27009",
+        "line": "tty7"
+      }]
+    },
+    "meowth": {
+      "tclay1": [{
+        "comment": ":21",
+        "idle": "old",
+        "name": "Tyrone Clay",
+        "time": "14:52",
+        "date": "2017-04-20",
+        "login": "tclay1",
+        "pid": "25993",
+        "line": "tty10"
+      }],
+      "nkhoros1": [{
+        "comment": ":0",
+        "idle": "old",
+        "name": "Nicole Khorosh",
+        "time": "15:02",
+        "date": "2017-04-12",
+        "login": "nkhoros1",
+        "pid": "4004",
+        "line": "tty8"
+      }],
+      "dboshko1": [{
+        "comment": ":20",
+        "idle": "old",
+        "name": "Douglass Boshkoff",
+        "time": "08:18",
+        "date": "2017-04-20",
+        "login": "dboshko1",
+        "pid": "7274",
+        "line": "tty9"
+      }]
+    }
+  }
+}

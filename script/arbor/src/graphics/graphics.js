@@ -15,40 +15,40 @@ var Graphics = function(canvas){
   var _coordMode = "origin" // vs "center"
 
   var _drawLibrary = {}
-  var _drawStyle = {background:null, 
-                    fill:null, 
+  var _drawStyle = {background:null,
+                    fill:null,
                     stroke:null,
                     width:0}
 
   var _fontLibrary = {}
   var _fontStyle = {font:"sans-serif",
-                   size:12, 
+                   size:12,
                    align:"left",
                    color:Colors.decode("black"),
                    alpha:1,
                    baseline:"ideographic"}
 
   var _lineBuffer = [] // calls to .lines sit here until flushed by .drawlines
-  
+
   ///MACRO:primitives-start
   var primitives = Primitives(ctx, _drawStyle, _fontStyle)
   var _Oval = primitives._Oval
   var _Rect = primitives._Rect
   var _Color = primitives._Color
   var _Path = primitives._Path
-  ///MACRO:primitives-end    
+  ///MACRO:primitives-end
 
 
-  // drawStyle({background:"color" or {r,g,b,a}, 
-  //            fill:"color" or {r,g,b,a}, 
-  //            stroke:"color" or {r,g,b,a}, 
-  //            alpha:<number>, 
+  // drawStyle({background:"color" or {r,g,b,a},
+  //            fill:"color" or {r,g,b,a},
+  //            stroke:"color" or {r,g,b,a},
+  //            alpha:<number>,
   //            weight:<number>})
 
 
 
 
-  
+
   var that = {
     init:function(){
       if (!ctx) return null
@@ -59,11 +59,11 @@ var Graphics = function(canvas){
     size:function(width,height){
       if (!isNaN(width) && !isNaN(height)){
         dom.attr({width:width,height:height})
-        
+
         // if (_drawStyle.fill!==null) that.fill(_drawStyle.fill)
         // if (_drawStyle.stroke!==null) that.stroke(_drawStyle.stroke)
         // that.textStyle(_fontStyle)
-        
+
         // trace(_drawStyle,_fontStyle)
       }
       return {width:dom.attr('width'), height:dom.attr('height')}
@@ -75,7 +75,7 @@ var Graphics = function(canvas){
         w=dom.attr('width')
         h=dom.attr('height')
       }
-      
+
       ctx.clearRect(x,y,w,h)
       if (_drawStyle.background!==null){
         ctx.save()
@@ -90,7 +90,7 @@ var Graphics = function(canvas){
         _drawStyle.background = null
         return null
       }
-      
+
       var fillColor = Colors.decode(a,b,c,d)
       if (fillColor){
         _drawStyle.background = fillColor
@@ -112,7 +112,7 @@ var Graphics = function(canvas){
         ctx.fillStyle = Colors.encode(fillColor)
       }
     },
-    
+
     noStroke:function(){
       _drawStyle.stroke = null
       ctx.strokeStyle = null
@@ -130,9 +130,9 @@ var Graphics = function(canvas){
       if (ptsize===undefined) return ctx.lineWidth
       ctx.lineWidth = _drawStyle.width = ptsize
     },
-    
-    
-    
+
+
+
     Color:function(clr){
       return new _Color(clr)
     },
@@ -151,7 +151,7 @@ var Graphics = function(canvas){
     drawStyle:function(style){
       // without arguments, show the current state
       if (arguments.length==0) return objcopy(_drawStyle)
-      
+
       // if this is a ("stylename", {style}) invocation, don't change the current
       // state but add it to the library
       if (arguments.length==2){
@@ -170,16 +170,16 @@ var Graphics = function(canvas){
         }
         return
       }
-      
+
       // if a ("stylename") invocation, load up the selected style
       if (arguments.length==1 && _drawLibrary[arguments[0]]!==undefined){
         style = _drawLibrary[arguments[0]]
       }
-            
+
       // for each of the properties specified, update the canvas state
       if (style.width!==undefined) _drawStyle.width = style.width
       ctx.lineWidth = _drawStyle.width
-      
+
       $.each('background fill stroke',function(i, color){
         if (style[color]!==undefined){
           if (style[color]===null) _drawStyle[color] = null
@@ -196,7 +196,7 @@ var Graphics = function(canvas){
     textStyle:function(style){
       // without arguments, show the current state
       if (arguments.length==0) return objcopy(_fontStyle)
-      
+
       // if this is a ("name", {style}) invocation, don't change the current
       // state but add it to the library
       if (arguments.length==2){
@@ -215,11 +215,11 @@ var Graphics = function(canvas){
         }
         return
       }
-      
+
       if (arguments.length==1 && _fontLibrary[arguments[0]]!==undefined){
         style = _fontLibrary[arguments[0]]
       }
-            
+
       if (style.font!==undefined) _fontStyle.font = style.font
       if (style.size!==undefined) _fontStyle.size = style.size
       ctx.font = nano("{size}px {font}", _fontStyle)
@@ -265,9 +265,9 @@ var Graphics = function(canvas){
         var alpha = (style.alpha!==undefined) ? style.alpha : _fontStyle.alpha
         var color = (style.color!==undefined) ? style.color : _fontStyle.color
         ctx.fillStyle = Colors.blend(color, alpha)
-        
-        // if (alpha>0) ctx.fillText(textStr, style.x, style.y);        
-        if (alpha>0) ctx.fillText(textStr, Math.round(style.x), style.y);        
+
+        // if (alpha>0) ctx.fillText(textStr, style.x, style.y);
+        if (alpha>0) ctx.fillText(textStr, Math.round(style.x), style.y);
       ctx.restore()
     },
 
@@ -275,29 +275,29 @@ var Graphics = function(canvas){
       style = objmerge(_fontStyle, style||{})
       ctx.save()
         ctx.font = nano("{size}px {font}", style)
-        var width = ctx.measureText(textStr).width			  
+        var width = ctx.measureText(textStr).width
       ctx.restore()
       return width
     },
-    
+
     // hasFont:function(fontName){
     //   var testTxt = 'H h H a H m H b H u H r H g H e H r H f H o H n H s H t H i H v H'
     //   ctx.save()
     //   ctx.font = '10px sans-serif'
     //   var defaultWidth = ctx.measureText(testTxt).width
-    // 
+    //
     //   ctx.font = '10px "'+fontName+'"'
     //   var putativeWidth = ctx.measureText(testTxt).width
     //   ctx.restore()
-    //   
+    //
     //   // var defaultWidth = that.textWidth(testTxt, {font:"Times New Roman", size:120})
     //   // var putativeWidth = that.textWidth(testTxt, {font:fontName, size:120})
     //   trace(defaultWidth,putativeWidth,ctx.font)
     //   // return (putativeWidth!=defaultWidth || fontName=="Times New Roman")
     //   return putativeWidth!=defaultWidth
     // },
-    
-    
+
+
     // shape primitives.
     // classes will return an {x,y,w,h, fill(), stroke()} object without drawing
     // functions will draw the shape based on current stroke/fill state
@@ -307,7 +307,7 @@ var Graphics = function(canvas){
     rect:function(x, y, w, h, r, style){
       _Rect.prototype._draw(x,y,w,h,r,style)
     },
-    
+
     Oval:function(x, y, w, h, style) {
       return new _Oval(x,y,w,h, style)
     },
@@ -315,13 +315,13 @@ var Graphics = function(canvas){
       style = style || {}
       _Oval.prototype._draw(x,y,w,h, style)
     },
-    
+
     // draw a line immediately
     line:function(x1, y1, x2, y2, style){
       var p = new _Path(x1,y1,x2,y2)
       p.draw(style)
     },
-    
+
     // queue up a line segment to be drawn in a batch by .drawLines
     lines:function(x1, y1, x2, y2){
       if (typeof y2=='number'){
@@ -332,18 +332,18 @@ var Graphics = function(canvas){
         _lineBuffer.push( [ x1,y1 ] )
       }
     },
-    
+
     // flush the buffered .lines to screen
     drawLines:function(style){
       var p = new _Path(_lineBuffer)
       p.draw(style)
       _lineBuffer = []
     }
-    
+
 
   }
-  
-  return that.init()    
+
+  return that.init()
 }
 
 
@@ -351,34 +351,34 @@ var Graphics = function(canvas){
 // var intersect_line_line = function(p1, p2, p3, p4)
 // {
 //  var denom = ((p4.y - p3.y)*(p2.x - p1.x) - (p4.x - p3.x)*(p2.y - p1.y));
-// 
+//
 //  // lines are parallel
 //  if (denom === 0) {
 //    return false;
 //  }
-// 
+//
 //  var ua = ((p4.x - p3.x)*(p1.y - p3.y) - (p4.y - p3.y)*(p1.x - p3.x)) / denom;
 //  var ub = ((p2.x - p1.x)*(p1.y - p3.y) - (p2.y - p1.y)*(p1.x - p3.x)) / denom;
-// 
+//
 //  if (ua < 0 || ua > 1 || ub < 0 || ub > 1) {
 //    return false;
 //  }
-// 
+//
 //  return arbor.Point(p1.x + ua * (p2.x - p1.x), p1.y + ua * (p2.y - p1.y));
 // }
-// 
+//
 // var intersect_line_box = function(p1, p2, p3, w, h)
 // {
 //  var tl = {x: p3.x, y: p3.y};
 //  var tr = {x: p3.x + w, y: p3.y};
 //  var bl = {x: p3.x, y: p3.y + h};
 //  var br = {x: p3.x + w, y: p3.y + h};
-// 
+//
 //  var result;
 //  if (result = intersect_line_line(p1, p2, tl, tr)) { return result; } // top
 //  if (result = intersect_line_line(p1, p2, tr, br)) { return result; } // right
 //  if (result = intersect_line_line(p1, p2, br, bl)) { return result; } // bottom
 //  if (result = intersect_line_line(p1, p2, bl, tl)) { return result; } // left
-// 
+//
 //  return false;
 // }

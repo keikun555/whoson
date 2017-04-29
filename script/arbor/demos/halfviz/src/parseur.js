@@ -1,10 +1,10 @@
 (function(){
-  
+
   //
-  // quick, incomplete (and surely buggy) ‘parser’ for reading in the halftone source 
+  // quick, incomplete (and surely buggy) ‘parser’ for reading in the halftone source
   //
   Parseur = function(){
-    var strip = function(s){ return s.replace(/^[\s\t]+|[\s\t]+$/g,'') }    
+    var strip = function(s){ return s.replace(/^[\s\t]+|[\s\t]+$/g,'') }
     var recognize = function(s){
       // return the first {.*} mapping in the string (or "" if none)
       var from = -1,
@@ -98,18 +98,18 @@
 
       return tokens
     }
-    
+
     var yack = function(statements){
       var nodes = {}
       var edges = {}
-      
+
       var nodestyle = {}
       var edgestyle = {}
       $.each(statements, function(i, st){
         var types = $.map(st, function(token){
           return token.type
         }).join('-')
-        
+
         // trace(st)
         if (types.match(/ident-arrow-ident(-style)?/)){
           // it's an edge
@@ -127,7 +127,7 @@
           }else{
             nodes[node] = ($.isEmptyObject(nodestyle)) ? -2600 : objcopy(nodestyle) // use defaults
           }
-          
+
         }else if (types=='style'){
           // it's a global style declaration for nodes
           nodestyle = objmerge(nodestyle, st[0].style)
@@ -136,7 +136,7 @@
           edgestyle = objmerge(edgestyle, st[1].style)
         }
       })
-      
+
       // find any nodes that were brought in via an edge then never styled explicitly.
       // they get whatever the final nodestyle was built up to be
       $.each(nodes, function(name, data){
@@ -144,7 +144,7 @@
           nodes[name] = objcopy(nodestyle)
         }
       })
-      
+
       return {nodes:nodes, edges:edges}
     }
 
@@ -158,15 +158,15 @@
           var tokens = lechs(line)
           if (tokens.length>0) statements.push(tokens)
         })
-        
+
         return yack(statements)
       }
     }
-    
+
     return that
   }
 
-  
 
-  
+
+
 })()

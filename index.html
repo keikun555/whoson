@@ -1,19 +1,44 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Whoson</title>
-    <!--Scripts-->
-    <script src="./script/jquery-3.2.1.min.js" charset="utf-8"></script>
-    <script src="./script/arbor/lib/arbor.js" charset="utf-8"></script>
-    <script src="./script/arbor/lib/arbor-tween.js" charset="utf-8"></script>
-    <!-- <script src="./script/arbor.js" charset="utf-8"></script> -->
-    <script src="./script/main.js" charset="utf-8"></script>
-    <link rel="stylesheet" href="./style/main.css">
-  </head>
-  <body>
-    <div>
-      <canvas id="viewport"></canvas>
+
+<head>
+  <meta charset="utf-8">
+  <title>Whoson</title>
+  <!--jQuery-->
+  <script src="./script/jquery-3.2.1.min.js" charset="utf-8"></script>
+  <!--arborjs-->
+  <script src="./script/arbor/lib/arbor.js" charset="utf-8"></script>
+  <script src="./script/arbor/lib/arbor-tween.js" charset="utf-8"></script>
+  <script src="./script/arbor/src/graphics/colors.js" charset="utf-8"></script>
+  <script src="./script/arbor/src/etc.js" charset="utf-8"></script>
+  <script src="./script/arbor/src/graphics/primitives.js" charset="utf-8"></script>
+  <script src="./script/arbor/src/graphics/graphics.js" charset="utf-8"></script>
+  <script src="./script/arbor_renderer.js" charset="utf-8"></script>
+  <!--semantic ui-->
+  <script src="https://cdn.jsdelivr.net/semantic-ui/2.2.10/semantic.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.10/semantic.min.css">
+  <!-- main -->
+  <script src="./script/main.js" charset="utf-8"></script>
+  <link rel="stylesheet" href="./style/main.css">
+</head>
+
+<body>
+  <div>
+    <div class="search ui">
+      <div class="ui icon input" style="position: absolute;top: 10px;left: 10px;">
+        <input class="prompt" type="text" placeholder="Search for Users">
+        <i class="search icon"></i>
+      </div>
+      <div class="results" style="position: absolute;top: 50px;left: 10px;"></div>
     </div>
-  </body>
+    <button class="ui icon button" style="position: absolute;top: 10px;left: 250px;">
+      <i class="zoom icon"></i>
+    </button>
+    <button class="ui icon button" style="position: absolute;top: 10px;left: 300px;">
+      <i class="zoom out icon"></i>
+    </button>
+    <canvas id="viewport"></canvas>
+  </div>
+</body>
+
 </html>
